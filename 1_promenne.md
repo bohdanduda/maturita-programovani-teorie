@@ -1,5 +1,6 @@
 # Proměnné
-
+* Místo paměti počítače, kam si můžeme uložit data.
+* Proměnná má vždy nějaký datový typ - číslo, znak, text atd.
 ## Datové typy
 hodnotové, odkazové, výčtové - https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types
 * hodnotové: např. `int`, `double`, `bool`, `char`
