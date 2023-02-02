@@ -1,6 +1,6 @@
 # Proměnné
 
-##Datové typy
+## Datové typy
 hodnotové, odkazové, výčtové - https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types
 * hodnotové: např. `int`, `double`, `bool`, `char`
 * odkazové: např. `string`, `object`, `dynamic`
