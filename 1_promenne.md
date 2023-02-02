@@ -3,9 +3,9 @@
 * Proměnná má vždy nějaký datový typ - číslo, znak, text atd.
 ## Datové typy
 hodnotové, odkazové, výčtové - https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types
-* hodnotové: např. `int`, `double`, `bool`, `char`
-* odkazové: např. `string`, `object`, `dynamic`
-* výčtové: `enum`
+* hodnotové - všechny __číselné__ datové typy: např. `int`, `double`, `bool`, `char`. Mají svou hodnotu přímo v paměti, která se označuje jako __zásobník__
+* odkazové: např. `string`, `object`, `dynamic`. Mají uložený pouze odkaz na skutečnou hodnotu. Samotné hodnoty jsou ukládány na haldu
+* výčtové: `enum` - konstanta, nedá se měnit.. pouze read-only. Např. seznam měsíců
 
 ## Velikosti
 Velikost daného typu proměnné v bytech
