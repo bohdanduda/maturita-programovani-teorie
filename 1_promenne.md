@@ -67,7 +67,7 @@ https://learn.microsoft.com/cs-cz/dotnet/csharp/language-reference/operators/ari
 ### relační
 * Porovnání (menší než), (větší než), (menší než nebo rovno) a (větší než nebo rovno), označované také jako relační operátory, porovnávají své operandy. Tyto operátory jsou podporovány všemi integrálními číselnými typy a číselnými typy s plovoucí desetinnou čárkou.
 
-* `menší než: <`, `větší než: >`, `menší nebo rovno: <=`, `větší nebo rovno: <=`
+* `menší než: <`, `větší než: >`, `menší nebo rovno: <=` `větší nebo rovno: >=`
 
 
 ### logické + pravdivostní tabulky
