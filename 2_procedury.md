@@ -1,4 +1,4 @@
-#procedury, funkce
+# procedury, funkce
 ## Parametry
 * dělí se na hodnotové `struct` a odkazové `class`
 * modifikátory `ref` a `out`
