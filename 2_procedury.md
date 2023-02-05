@@ -34,5 +34,10 @@ https://learn.microsoft.com/cs-cz/dotnet/csharp/programming-guide/classes-and-st
 * příklady specifikátorů typu: `void`, `char`, `int`, `double`, `string` atd.
 https://learn.microsoft.com/cs-cz/cpp/c-language/return-type?view=msvc-170
 ## Předávání parametrů do funkce (hodnotou, ref, out)
-
-
+* Klíčová slova ref a out se v jazyce C# používají k předávání argumentů v rámci metody nebo funkce, obě označují, že __argument/parametr__ je předáván odkazem
+* Ve výchozím nastavení jsou parametry předávány metodě hodnotou. Pomocí těchto klíčových slov (ref a out) můžeme předat parametr pomocí reference.
+### REF
+* Klíčové slovo ref předává argumenty pomocí reference. Znamená to, že všechny změny provedené v metodě s tímto argumentem se projeví v této proměnné, když se řízení vrátí do volající metody
+### OUT
+* Také jako u `REF` se předávají argumenty pomocí reference. Jediný rozdíl je, že `OUT` nevyžaduje inicialnizaci proměnné
+* Podobá se také klíčovému slovu `in` jen s tím rozdílem, že `in` neumožňuje volané metodě měnit hodnotu argumentu
