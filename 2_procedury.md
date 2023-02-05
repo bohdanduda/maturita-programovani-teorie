@@ -2,11 +2,6 @@
 * Procedura a funkce neboli __metoda__ je blok kódu, který obsahuje řadu příkazů, které se spusí pouze, když je metoda zavolána. Pokud metoda očekává parametry, musíme je jí předat, jinak ke spuštění nedojde.
 * Metody používáme nejčastěji k opakovanému použití kódu (jednou kód definujeme, mnohokrát ho použijeme).
 * Každá aplikace má vygenerovanou metodu `Main`. Je volána __CLR__(Common Language Runtime) při spoštění programu.
-## Parametry
-* dělí se na hodnotové `struct` a odkazové `class`, nebo `interface`
-* modifikátory `ref` a `out`
-* `ref` indikuje že proměnná je reference, nebo alias pro jiný objekt. Proměnná s `ref` musí být inicializována
-* `out` funguje podobně jako `ref` jen s tím rozdílem, že proměnná nemusí být inicializována. Volaná metoda je však nutná k přiřazení hodnoty před vrácením metody.
 
 ## Rozdíly
 * procedura nic nevrací má návratový typ `void`
@@ -30,6 +25,13 @@ public int Count(int x, int y)
 }
 ```
 https://learn.microsoft.com/cs-cz/dotnet/csharp/programming-guide/classes-and-structs/methods
+
+## Parametry
+* dělí se na hodnotové `struct` a odkazové `class`, nebo `interface`
+* modifikátory `ref` a `out`
+* `ref` indikuje že proměnná je reference, nebo alias pro jiný objekt. Proměnná s `ref` musí být inicializována
+* `out` funguje podobně jako `ref` jen s tím rozdílem, že proměnná nemusí být inicializována. Volaná metoda je však nutná k přiřazení hodnoty před vrácením metody.
+
 ## Návratový typ
 * Návratový typ funkce určí velikost a typ hodnoty vrácené funkcí a odpovídá specifikátoru typu
 * Pokud funkce nemá návratový typ `void`, tak musí vždy vracet nějaký výsledek pomocí `return`
