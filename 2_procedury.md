@@ -3,7 +3,7 @@
 * Metody používáme nejčastěji k opakovanému použití kódu (jednou kód definujeme, mnohokrát ho použijeme).
 * Každá aplikace má vygenerovanou metodu `Main`. Je volána __CLR__(Common Language Runtime) při spoštění programu.
 ## Parametry
-* dělí se na hodnotové `struct` a odkazové `class`
+* dělí se na hodnotové `struct` a odkazové `class`, nebo `interface`
 * modifikátory `ref` a `out`
 * `ref` indikuje že proměnná je reference, nebo alias pro jiný objekt. Proměnná s `ref` musí být inicializována
 * `out` funguje podobně jako `ref` jen s tím rozdílem, že proměnná nemusí být inicializována. Volaná metoda je však nutná k přiřazení hodnoty před vrácením metody.
