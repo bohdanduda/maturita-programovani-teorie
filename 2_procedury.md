@@ -1,5 +1,7 @@
 # procedury, funkce
-* Metoda je blok kódu, který obsahuje řadu příkazů. Program způsobí, že příkazy se spustí voláním metody a zadáním všech požadovaných argumentů metody. V jazyce C# se každá spuštěná instrukce provádí v kontextu metody.
+* Metoda je blok kódu, který obsahuje řadu příkazů, které se spusí pouze, když je metoda zavolána. Pokud metoda očekává parametry, musíme je jí předat, jinak ke spuštění nedojde.
+* Metody používáme nejčastěji k opakovanému použití kódu (jednou kód definujeme, mnohokrát ho použijeme).
+* Každá aplikace má vygenerovanou metodu `Main`. Je volána __CLR__(Common Language Runtime) při spoštění programu.
 ## Parametry
 * dělí se na hodnotové `struct` a odkazové `class`
 * modifikátory `ref` a `out`
