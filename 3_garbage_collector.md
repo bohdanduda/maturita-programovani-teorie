@@ -1,9 +1,7 @@
 # garbage collector
 
 _hledá úseky paměti, které jsou obsazeny nepoužívanými „odpadky“, které už dále programem nejsou využívány_
-
-Garbage collection is an automated process that is able to figure out which objects are no longer needed and get rid of them, freeing space in memory.
-
+Sběr odpadu je automatizovaný proces, který je schopný zjistit, jaké objekty už nevyužíváme a zbaví se jich. Tím čistí místo v paměti.
 
 ## reference counter
 * počítá počet odkazů na objekt, když na něj nikdo neodkazuje, objekt se smaže
