@@ -9,9 +9,14 @@
 * `IF..GOTO` - Napodobuje typickou strojovou instrukci GOTO, která umožňuje skok na určitý řádek kódu
 * `IF..THEN` - Pokud je podmínka v části IF vyhodnocena jako pravda, je vykonán kód specifikovaný v části THEN. Když není, je kód v části THEN vynechán a program pokračuje dál.
 * `IF..THEN..ELSE` - Pokud podmínka v části IF není vyhodnocena jako pravda, provede se kód v části `ELSE`
+* Syntaxe `IF`
+![If syntaxe](https://cdn.programiz.com/sites/tutorial2program/files/if-else-statement-csharp.png)
+
 
 ### SWITCH a CASE
 * switch porovnává předanou hodnotu s předem specifikovanými konstantami. V případě shody hodnoty s konstantou, vykoná příkaz, který je definován za ní
+* Syntaxe `CASE`
+* ![Case syntaxe](https://miro.medium.com/max/1110/1*jgsNHffPE39208jn4cUI6g.png)
 
 ## cykly
 * cyklus je řídící struktura, kde se opakovaně provádí posloupnost příkazů. Opakování i ukončení cyklu je řízeno nějakou podmínku
