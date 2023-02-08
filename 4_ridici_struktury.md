@@ -25,6 +25,9 @@
 * `DO-WHILE` - první se spustí kód, potom se vyhodnotí podmínka
 * `FOR` - speciální případ cyklu s podmínkou na začátku, obvykle užívaný pro výčet prvků z množiny prvků (`FOR(; ;)` - nekonečná smyčka jako u `WHILE(true)`)
 
+## Enumerator
+
+
 ## výjimky (try-and-catch)
 * funkce zpracování výjimek jazyka C# pomůžou řešit neočekávané nebo výjimečné situace, ke kterým dochází při spuštění programu
 * výjimky se vytvářejí pomocí `THROW (exeption)`
