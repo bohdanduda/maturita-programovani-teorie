@@ -21,9 +21,10 @@
 ## cykly
 * cyklus je řídící struktura, kde se opakovaně provádí posloupnost příkazů. Opakování i ukončení cyklu je řízeno nějakou podmínku
 * existuje mnoho druhů cyklů:
-* `WHILE` - pokud platí podmínka, cyklus běží furt dokola
-* `DO-WHILE` - cyklus s podmínkou na konci posloupnosti příkazů
-* `FOR` - speciální případ cyklu s podmínkou na začátku, obvykle užívaný pro výčet prvků z množiny prvků
+* `WHILE` - první se vyhodnotí podmínka, potom se spustí kód. Pokud platí podmínka, cyklus běží furt dokola (jde vytvořit nekonečná smyčka: `WHILE(true)`)
+* `DO-WHILE` - první se spustí kód, potom se vyhodnotí podmínka
+* `FOR` - speciální případ cyklu s podmínkou na začátku, obvykle užívaný pro výčet prvků z množiny prvků (`FOR(; ;)` - nekonečná smyčka jako u `WHILE(true)`)
+
 ## výjimky (try-and-catch)
 * funkce zpracování výjimek jazyka C# pomůžou řešit neočekávané nebo výjimečné situace, ke kterým dochází při spuštění programu
 * výjimky se vytvářejí pomocí `THROW (exeption)`
