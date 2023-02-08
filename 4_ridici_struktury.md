@@ -1,25 +1,25 @@
-# øídící struktury
+# Å™Ã­dÃ­cÃ­ struktury
 * 3 druhy struktur programu:
-1. posloupnost pøíkazù – všechny pøíkazy se postupnì provedou jeden po druhém
-2. vìtvení (èi podmínìnı pøíkaz) – v závislosti na splnìní podmínky se urèitı pøíkaz buï provede nebo neprovede
-3. cyklus – v závislosti na splnìní podmínky se èást programu vykoná vícekrát
-## podmínky
+1. posloupnost pÅ™Ã­kazÅ¯ â€“ vÅ¡echny pÅ™Ã­kazy se postupnÄ› provedou jeden po druhÃ©m (psanÃ­ kÃ³du po Å™Ã¡dcÃ­ch)
+2. vÄ›tvenÃ­ (Äi podmÃ­nÄ›nÃ½ pÅ™Ã­kaz) â€“ v zÃ¡vislosti na splnÄ›nÃ­ podmÃ­nky se urÄitÃ½ pÅ™Ã­kaz buÄ provede nebo neprovede (podmÃ­nÄ›nÃ½ pÅ™Ã­kaz `if`)
+3. cyklus â€“ v zÃ¡vislosti na splnÄ›nÃ­ podmÃ­nky se ÄÃ¡st programu vykonÃ¡ vÃ­cekrÃ¡t (pÅ™Ã­kazy `while`, `for`, `foreach`)
+## podmÃ­nky
 ### IF
-*  podmínìnı pøíkaz a podmínìná konstrukce jsou prostøedky, které umoòují rozdílné chování programu, v závislosti na specifikované logické podmínce. Vısledek podmínky je buï `true` nebo `false`
-* `IF..GOTO` - Napodobuje typickou strojovou instrukci GOTO, která umoòuje skok na urèitı øádek kódu
-* `IF..THEN` - Pokud je podmínka v èásti IF vyhodnocena jako pravda, je vykonán kód specifikovanı v èásti THEN. Kdy není, je kód v èásti THEN vynechán a program pokraèuje dál.
-* `IF..THEN..ELSE` - Pokud podmínka v èásti IF není vyhodnocena jako pravda, provede se kód v èásti `ELSE`
+*  podmÃ­nÄ›nÃ½ pÅ™Ã­kaz a podmÃ­nÄ›nÃ¡ konstrukce jsou prostÅ™edky, kterÃ© umoÅ¾ÅˆujÃ­ rozdÃ­lnÃ© chovÃ¡nÃ­ programu, v zÃ¡vislosti na specifikovanÃ© logickÃ© podmÃ­nce. VÃ½sledek podmÃ­nky je buÄ `true` nebo `false`
+* `IF..GOTO` - Napodobuje typickou strojovou instrukci GOTO, kterÃ¡ umoÅ¾Åˆuje skok na urÄitÃ½ Å™Ã¡dek kÃ³du
+* `IF..THEN` - Pokud je podmÃ­nka v ÄÃ¡sti IF vyhodnocena jako pravda, je vykonÃ¡n kÃ³d specifikovanÃ½ v ÄÃ¡sti THEN. KdyÅ¾ nenÃ­, je kÃ³d v ÄÃ¡sti THEN vynechÃ¡n a program pokraÄuje dÃ¡l.
+* `IF..THEN..ELSE` - Pokud podmÃ­nka v ÄÃ¡sti IF nenÃ­ vyhodnocena jako pravda, provede se kÃ³d v ÄÃ¡sti `ELSE`
 
 ### SWITCH a CASE
-* switch porovnává pøedanou hodnotu s pøedem specifikovanımi konstantami. V pøípadì shody hodnoty s konstantou, vykoná pøíkaz, kterı je definován za ní
+* switch porovnÃ¡vÃ¡ pÅ™edanou hodnotu s pÅ™edem specifikovanÃ½mi konstantami. V pÅ™Ã­padÄ› shody hodnoty s konstantou, vykonÃ¡ pÅ™Ã­kaz, kterÃ½ je definovÃ¡n za nÃ­
 
 ## cykly
-* cyklus je øídící struktura, kde se opakovanì provádí posloupnost pøíkazù. Opakování i ukonèení cyklu je øízeno nìjakou podmínku
-* existuje mnoho druhù cyklù:
-* `WHILE` - pokud platí podmínka, cyklus bìí furt dokola
-* `DO-WHILE` - cyklus s podmínkou na konci posloupnosti pøíkazù
-* `FOR` - speciální pøípad cyklu s podmínkou na zaèátku, obvykle uívanı pro vıèet prvkù z mnoiny prvkù
-## vıjimky (try-and-catch)
-* funkce zpracování vıjimek jazyka C# pomùou øešit neoèekávané nebo vıjimeèné situace, ke kterım dochází pøi spuštìní programu
-* vıjimky se vytváøejí pomocí `THROW (exeption)`
-* pomocí pøíkazù `TRY` a `CATCH` nejdøíve zkusíme zda je kód funkèní, pokud ne tak `CATCH` "chytí" chybu a vykoná definovanı pøíkaz
+* cyklus je Å™Ã­dÃ­cÃ­ struktura, kde se opakovanÄ› provÃ¡dÃ­ posloupnost pÅ™Ã­kazÅ¯. OpakovÃ¡nÃ­ i ukonÄenÃ­ cyklu je Å™Ã­zeno nÄ›jakou podmÃ­nku
+* existuje mnoho druhÅ¯ cyklÅ¯:
+* `WHILE` - pokud platÃ­ podmÃ­nka, cyklus bÄ›Å¾Ã­ furt dokola
+* `DO-WHILE` - cyklus s podmÃ­nkou na konci posloupnosti pÅ™Ã­kazÅ¯
+* `FOR` - speciÃ¡lnÃ­ pÅ™Ã­pad cyklu s podmÃ­nkou na zaÄÃ¡tku, obvykle uÅ¾Ã­vanÃ½ pro vÃ½Äet prvkÅ¯ z mnoÅ¾iny prvkÅ¯
+## vÃ½jimky (try-and-catch)
+* funkce zpracovÃ¡nÃ­ vÃ½jimek jazyka C# pomÅ¯Å¾ou Å™eÅ¡it neoÄekÃ¡vanÃ© nebo vÃ½jimeÄnÃ© situace, ke kterÃ½m dochÃ¡zÃ­ pÅ™i spuÅ¡tÄ›nÃ­ programu
+* vÃ½jimky se vytvÃ¡Å™ejÃ­ pomocÃ­ `THROW (exeption)`
+* pomocÃ­ pÅ™Ã­kazÅ¯ `TRY` a `CATCH` nejdÅ™Ã­ve zkusÃ­me zda je kÃ³d funkÄnÃ­, pokud ne tak `CATCH` "chytÃ­" chybu a vykonÃ¡ definovanÃ½ pÅ™Ã­kaz
