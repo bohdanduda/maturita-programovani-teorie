@@ -6,8 +6,8 @@
 * každý rekurzivní algoritmus jde napsat podle iterativního a naopak, pro každý jsou ale lepší různé algoritmy
 * rekurzivní algoritmus musí mít vždycky koncovou podmínku, jinak dojde k __stack overflow__ - to znamená že algoritmus pokračuje furt dokola, než dojde k přehlcení paměti zásobníku
 * rozdíl je, že iterativní algoritmus počítá výsledek _Zdola nahoru_ zatímco rekurzivní naopak
-* Výhody rekurzivního: jednoduchost a přehlednost.
-* Nevýhody rekurzivního: časová náročnost, způsobena zbytečným opakováním výpočtu
+* __Výhody rekurzivního__: jednoduchost a přehlednost.
+* __Nevýhody rekurzivního__: časová náročnost, způsobena zbytečným opakováním výpočtu
 * přirozeně rekurzivní algoritmus je např. Quick Sort.
 ### Quick Sort
 * Je to nejrychlejší algoritmus na řazení a v praxi se používá k třídění prvků. Funguje dobře jak na velkých, tak na malých polích a je paměťově nenáročný.
