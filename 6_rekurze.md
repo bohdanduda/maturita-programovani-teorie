@@ -1,9 +1,18 @@
 # rekurze
 ## definice
-* rekurze je programovac� technika, p�i n� je ur�it� procedura nebo funkce znovu vol�na d��ve, ne� je dokon�eno jej� p�edchoz� vol�n�
-* pou�it� rekurze m��e u n�kter�ch �loh v�st ke stru�n�mu a matematicky elegantn�mu �e�en� (nap�. v�po�et faktori�lu)... nevede ale nutn� k �e�en� optim�ln�mu
-## vztah rekurzivn�ho a iterativn�ho algoritmu
-## p��klady rekurze
+* rekurze je programovací technika, při níž je určitá procedura nebo funkce znovu volána dříve, než je dokončeno její předchozí volání
+* použití rekurze může u některých úloh vést ke stručnému a matematicky elegantnímu řešení (např. výpočet faktoriálu)... nevede ale nutně k řešení optimálnímu
+## vztah rekurzivního a iterativního algoritmu
+* každý rekurzivní algoritmus jde napsat podle iterativního a naopak, pro každý jsou ale lepší různé algoritmy
+* rekurzivní algoritmus musí mít vždycky koncovou podmínku, jinak dojde k __stack overflow__ - to znamená že algoritmus pokračuje furt dokola, než dojde k přehlcení paměti zásobníku
+* rozdíl je, že iterativní algoritmus počítá výsledek _Zdola nahoru_ zatímco rekurzivní naopak
+* Výhody rekurzivního: jednoduchost a přehlednost.
+* Nevýhody rekurzivního: časová náročnost, způsobena zbytečným opakováním výpočtu
+* přirozeně rekurzivní algoritmus je např. Quick Sort.
+### Quick Sort
+* Je to nejrychlejší algoritmus na řazení a v praxi se používá k třídění prvků. Funguje dobře jak na velkých, tak na malých polích a je paměťově nenáročný.
+* Funguje tak, že označí jeden prvek v poli jako pivot, poté se přesune na konec pole a to se rozdělí na dvě půlky. Obě půlky se poté rekurzivně seřadí.
+## příklady rekurze
 ```
 public int FindFactorial(int inputNumber)
 {
@@ -14,4 +23,4 @@ public int FindFactorial(int inputNumber)
 	return inputNumber * FindFactorial(inputNumber-1);
 }
 ```
-* Funkci ``FindFactorial()`` vol�me znova je�t� p�ed t�m, ne� byla dokon�ena, proto je p��klad __rekurzivn�__
+* Funkci ``FindFactorial()`` voláme znova ještě před tím, než byla dokončena, proto je příklad __rekurzivní__
