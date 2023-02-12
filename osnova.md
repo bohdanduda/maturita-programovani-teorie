@@ -1,23 +1,23 @@
 # Okruhy otázek
 
 
-1. [proměnné](1_promenne.md) - datové typy, velikosti, uložení záporných čísel (přímý, doplňkový kód), desetinná čísla, hodnotové a referenční, platnost proměnných, operátory (aritmetické, logické + pravdivostní tabulky, bitové), enum, přetěžování operátorů
+1. [proměnné](01_promenne.md) - datové typy, velikosti, uložení záporných čísel (přímý, doplňkový kód), desetinná čísla, hodnotové a referenční, platnost proměnných, operátory (aritmetické, logické + pravdivostní tabulky, bitové), enum, přetěžování operátorů
 
-2. [procedury, funkce](2_procedury.md) - parametry, rozdíly, návratový typ, předávání parametrů do funkce (hodnotou, ref, out)
+2. [procedury, funkce](02_procedury.md) - parametry, rozdíly, návratový typ, předávání parametrů do funkce (hodnotou, ref, out)
 
-3. [garbage collector](3_garbage_collector.md) (reference counter, mark-and-sweep), heap/stack, referenční datové typy, memory leak
+3. [garbage collector](03_garbage_collector.md) (reference counter, mark-and-sweep), heap/stack, referenční datové typy, memory leak
 
-4. [řídící struktury](4_ridici_struktury.md) - podmínky, cykly, výjimky (vyhození a odchyt)
+4. [řídící struktury](04_ridici_struktury.md) - podmínky, cykly, výjimky (vyhození a odchyt)
 
 5. algoritmy - vlastnosti, vztah algoritmů a programovacích jazyků, výpočet asymptotické složitosti (funkce omikron, omega, theta), algoritmy v poli (min/max, otočení, vkládání, linární vyhl. binární vyhl. řadící alg. - bubble sort, selection sort, insertion sort, quick sort, merge sort, heap sort), stabilita řazení, implementace jednoduchých alg.
 
-6. [rekurze](6_rekurze.md) - definice, vztah rekurzivního a iterativního algoritmu, příklady
+6. [rekurze](06_rekurze.md) - definice, vztah rekurzivního a iterativního algoritmu, příklady
 
-7. [pole a kolekce](7_pole_a_kolekce.md) - definice pole, princip, uložení v RAM, rozdíl polí a kolekcí, výhody/nevýhody, indexy, 2D/3D pole, List, Dictionary
+7. [pole a kolekce](07_pole_a_kolekce.md) - definice pole, princip, uložení v RAM, rozdíl polí a kolekcí, výhody/nevýhody, indexy, 2D/3D pole, List, Dictionary
 
-8. [řetězce](8_retezce.md) - string, jeho reprezentace v RAM, vztah stringu a pole, velikost, práce s řetězci (základní funkce - split, substring, tolower, toupper, replace, trim, pad...), spojování řetězců, StringBuilder, bile znaky, escape sekvence \n \r \t \\, @"\string", $"hello {variable}"
+8. [řetězce](08_retezce.md) - string, jeho reprezentace v RAM, vztah stringu a pole, velikost, práce s řetězci (základní funkce - split, substring, tolower, toupper, replace, trim, pad...), spojování řetězců, StringBuilder, bile znaky, escape sekvence \n \r \t \\, @"\string", $"hello {variable}"
 
-9. [datové struktury](9_datove_struktury.md) - zásobník, fronta, single-linked list, double-linked list, principy a použití, implementace fronty a zásobníku v poli a ve spojovém seznamu
+9. [datové struktury](09_datove_struktury.md) - zásobník, fronta, single-linked list, double-linked list, principy a použití, implementace fronty a zásobníku v poli a ve spojovém seznamu
 
 10. [soubory a souborový systém](10_soubory.md) - čtení a zápis do souboru, zpracování CSV souboru, XML, JSON, práce se souborovým systémem (FileInfo, DirectoryInfo, DriveInfo) 
 
