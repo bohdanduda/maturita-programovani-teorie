@@ -1,67 +1,68 @@
 # pole a kolekce
 
 ## definice pole
-* neuspoøádaná posloupnost prvkù stejného typu, prvky pole jsou uloeny v souvislém bloku pamìti a pro pøístup k nim slouí celoèíselnı index 
-* pole deklarujeme zadáním typu jeho prvkù
+* neuspoÅ™Ã¡danÃ¡ posloupnost prvkÅ¯ stejnÃ©ho typu, prvky pole jsou uloÅ¾eny v souvislÃ©m bloku pamÄ›ti a pro pÅ™Ã­stup k nim slouÅ¾Ã­ celoÄÃ­selnÃ½ index 
+* pole deklarujeme zadÃ¡nÃ­m typu jeho prvkÅ¯
 
-* pøíklad pole s hodnotou int s 10ti prvky
+* pÅ™Ã­klad pole s hodnotou int s 10ti prvky
 ```
 int[] intArray = new int[10];
 ```
 
 ## princip
 
-## uloení v RAM
+## uloÅ¾enÃ­ v RAM
+* data pole a kolekce se v pamÄ›ti uklÃ¡dajÃ­ na haldÄ› (__heap__). Pro pÅ™Ã­stup k nim je na zÃ¡sobnÃ­ku (__stack__) odkaz na danÃ© pole nebo kolekci.
 
-## rozdíl polí a kolekcí
-* pole jsou uiteènìjší pro práci s pevnım poètem objektù
-* kolekce se na rozdíl od polí mùe dynamicky zvìtšovat a zmenšovat podle potøeb aplikace, u nìkterıch kolekcí se mùe pøiøadit klíè k libovolnému objektu aby se poté objekt mohl rychle naèíst
-* kolekce je tøída, take se pouití musí deklarovat instance
+## rozdÃ­l polÃ­ a kolekcÃ­
+* pole jsou uÅ¾iteÄnÄ›jÅ¡Ã­ pro prÃ¡ci s pevnÃ½m poÄtem objektÅ¯
+* kolekce se na rozdÃ­l od polÃ­ mÅ¯Å¾e dynamicky zvÄ›tÅ¡ovat a zmenÅ¡ovat podle potÅ™eb aplikace, u nÄ›kterÃ½ch kolekcÃ­ se mÅ¯Å¾e pÅ™iÅ™adit klÃ­Ä k libovolnÃ©mu objektu aby se potÃ© objekt mohl rychle naÄÃ­st
+* kolekce je tÅ™Ã­da, takÅ¾e se pÅ™i pouÅ¾itÃ­ musÃ­ deklarovat instance
 
-## vıhody a nevıhody
+## vÃ½hody a nevÃ½hody
 
 ## indexy
-* index je oznaèení itemu v poli, nebo kolekci
-* pomocí indexù mùeme lehce najít danou hodnotu v poli
+* index je oznaÄenÃ­ itemu v poli, nebo kolekci
+* pomocÃ­ indexÅ¯ mÅ¯Å¾eme lehce najÃ­t danou hodnotu v poli
 
 ## 2D/3D pole
-* pole mohou bıt i vícerozmìrná
-* dvourozmìrné pole si mùeme pøedstavit jako tabulku
+* pole mohou bÃ½t i vÃ­cerozmÄ›rnÃ¡
+* dvourozmÄ›rnÃ© pole si mÅ¯Å¾eme pÅ™edstavit jako tabulku
 
-* deklarace dvourozmìrného pole s 4mi øádky a 2mi sloupci
+* deklarace dvourozmÄ›rnÃ©ho pole s 4mi Å™Ã¡dky a 2mi sloupci
 ```
 int[,] array = new int[4, 2];
 ```
-* deklarace trojrozmìrného pole
+* deklarace trojrozmÄ›rnÃ©ho pole
 ```
 int[,,] array1 = new int[4, 2, 3];
 ```
 
 ## list
-* kolekce objektù které lze volat pomocí indexu, do listu se dají za bìhu programu pøidávat, nebo také odstraòovat hodnoty
-* metody a prvky tøídy `List`
+* kolekce objektÅ¯ stejnÃ©ho typu, kterÃ© lze volat pomocÃ­ indexu, do listu se dajÃ­ za bÄ›hu programu pÅ™idÃ¡vat, nebo takÃ© odstraÅˆovat hodnoty
+* metody a prvky tÅ™Ã­dy `List`
 
-`Add()` - pøidá novı prvek do listu
+`Add()` - pÅ™idÃ¡ novÃ½ prvek do listu
 
-`Clear()` - vymae všechny prvky
+`Clear()` - vymaÅ¾e vÅ¡echny prvky
 
-`Contains()` - vrátí `true`, pokud list obsahuje danı prvek
+`Contains()` - vrÃ¡tÃ­ `true`, pokud list obsahuje danÃ½ prvek
 
-`CopyTo()` - umoòuje zkopírovat prvky z listu do pole
+`CopyTo()` - umoÅ¾Åˆuje zkopÃ­rovat prvky z listu do pole
 
-`IndexOf()` - vrátí index prvního vıskytu daného prvku v listu
+`IndexOf()` - vrÃ¡tÃ­ index prvnÃ­ho vÃ½skytu danÃ©ho prvku v listu
 
-`Insert()` - vloí na danı index novı prvek (další posloupnì)
+`Insert()` - vloÅ¾Ã­ na danÃ½ index novÃ½ prvek (dalÅ¡Ã­ posloupnÄ›)
 
-`Remove()` - vymae danı prvek
+`Remove()` - vymaÅ¾e danÃ½ prvek
 
-`RemoveAt()` - vymae prvek na daném indexu 
+`RemoveAt()` - vymaÅ¾e prvek na danÃ©m indexu 
 
 ## dictionary
-* kolekce klíèù a hodnot stejného typu
-* kadı klíè musí bıt unikátní, také nesmí bıt null pokud je hodnota reference
+* kolekce klÃ­ÄÅ¯ a hodnot stejnÃ©ho typu
+* kaÅ¾dÃ½ klÃ­Ä musÃ­ bÃ½t unikÃ¡tnÃ­, takÃ© nesmÃ­ bÃ½t null pokud je hodnota reference
 
-* pøíklad stringového slovníku
+* pÅ™Ã­klad stringovÃ©ho slovnÃ­ku
 ```
 Dictionary<string,string> states = new Dictionary<string,string>();
 ```
