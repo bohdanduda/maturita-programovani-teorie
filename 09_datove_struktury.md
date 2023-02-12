@@ -1,27 +1,28 @@
-# datové struktury
-## zásobník
-* datová struktura, pouívaná pro doèasné ukládání dat
-* prvek lze ze zásobníku vyjmout pouze v pøípadì, e "je na øadì"
-* hodnotu prvku mùeme ale pøeèíst kdykoli (prvek zùstane na místì)
-* data uloená v zásobníku poslední, budou odstranìna jako první __LIFO__ ("Last In - First Out")
-* pøidání prvku do zásobníku se nazıvá __PUSH__ operace
-* odstranìní se nazıvá __POP__ operace
-* poslední prvek má atribut __TOP__
+# datovÃ© struktury
+* pÅ™edstavujÃ­ konkrÃ©tnÃ­ zpÅ¯sob organizace dat v pamÄ›ti poÄÃ­taÄe, kterÃ½ zajiÅ¡Å¥uje, aby mohla data bÃ½t pouÅ¾Ã­vÃ¡na efektivnÄ›. DatovÃ¡ struktura umoÅ¾Åˆuje uchovÃ¡vat a zpracovÃ¡vat mnoÅ¾inu dat stejnÃ©ho typu nebo rÅ¯znorodÃ½ch, ale logicky souvisejÃ­cÃ­ch dat
+## zÃ¡sobnÃ­k
+* datovÃ¡ struktura, pouÅ¾Ã­vanÃ¡ pro doÄasnÃ© uklÃ¡dÃ¡nÃ­ dat
+* prvek lze ze zÃ¡sobnÃ­ku vyjmout pouze v pÅ™Ã­padÄ›, Å¾e "je na Å™adÄ›"
+* hodnotu prvku mÅ¯Å¾eme ale pÅ™eÄÃ­st kdykoli (prvek zÅ¯stane na mÃ­stÄ›)
+* data uloÅ¾enÃ¡ v zÃ¡sobnÃ­ku poslednÃ­, budou odstranÄ›na jako prvnÃ­ __LIFO__ ("Last In - First Out")
+* pÅ™idÃ¡nÃ­ prvku do zÃ¡sobnÃ­ku se nazÃ½vÃ¡ __PUSH__ operace
+* odstranÄ›nÃ­ se nazÃ½vÃ¡ __POP__ operace
+* poslednÃ­ prvek mÃ¡ atribut __TOP__
 ## fronta
-* data uloena jako první budou odstranìna jako první __FIFO__ ("First In – First Out")
-* pøidání prvku do zásobníku se nazıvá __ENQUEUE__ operace
-* odstranìní se nazıvá __DEQUEUE__ operace
-* ve frontì se sleduje vdy první a poslední prvek mají atributy (__FRONT__) a (__REAR__)
+* data uloÅ¾ena jako prvnÃ­ budou odstranÄ›na jako prvnÃ­ __FIFO__ ("First In â€“ First Out")
+* pÅ™idÃ¡nÃ­ prvku do zÃ¡sobnÃ­ku se nazÃ½vÃ¡ __ENQUEUE__ operace
+* odstranÄ›nÃ­ se nazÃ½vÃ¡ __DEQUEUE__ operace
+* ve frontÄ› se sleduje vÅ¾dy prvnÃ­ a poslednÃ­ prvek majÃ­ atributy (__FRONT__) a (__REAR__)
 ## sigly-linked list
-* list, jeho prvky mùeme procházet jen jedním smìrem: Head-to-Tail
-* kadı prvek linked listu se nazıvá __NODE__, obsahuje data a pointer k dalšímu prvku, co pomáhá udrovat strukturu listu
+* list, jehoÅ¾ prvky mÅ¯Å¾eme prochÃ¡zet jen jednÃ­m smÄ›rem: Head-to-Tail
+* kaÅ¾dÃ½ prvek linked listu se nazÃ½vÃ¡ __NODE__, obsahuje data a pointer k dalÅ¡Ã­mu prvku, coÅ¾ pomÃ¡hÃ¡ udrÅ¾ovat strukturu listu
 ## doubly-linked list
-* list, jeho prvky jsou také ukládány ve formì __NODE__
-* kadı __NODE__ v listu obsahuje 3 sub-elementy: 
-1. datovou èást, která obsahuje hodnotu elementu
-2. link k pøedchozímu __NODE__
-3. link k dalšímu __NODE__
+* list, jehoÅ¾ prvky jsou takÃ© uklÃ¡dÃ¡ny ve formÄ› __NODE__
+* kaÅ¾dÃ½ __NODE__ v listu obsahuje 3 sub-elementy: 
+1. datovou ÄÃ¡st, kterÃ¡ obsahuje hodnotu elementu
+2. link k pÅ™edchozÃ­mu __NODE__
+3. link k dalÅ¡Ã­mu __NODE__
 
-## principy a pouití
+## principy a pouÅ¾itÃ­
 
-## implementace fronty zásobníku v poli a ve spojovém seznamu
+## implementace fronty zÃ¡sobnÃ­ku v poli a ve spojovÃ©m seznamu
