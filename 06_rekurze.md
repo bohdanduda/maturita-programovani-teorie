@@ -16,10 +16,10 @@
 ```
 public int FindFactorial(int inputNumber)
 {
-	if(inputNumber == 1)
-	{
-		return inputNumber;
-	}
+	if(inputNumber == 0)
+        {
+                return 1;
+        }
 	return inputNumber * FindFactorial(inputNumber-1);
 }
 ```
