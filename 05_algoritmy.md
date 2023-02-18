@@ -1,22 +1,23 @@
 # Algoritmy
+* Algoritmus je pÅ™esnÃ½ postup jak vyÅ™eÅ¡it danÃ½ typ Ãºlohy
 ## vlastnosti
-* Aby mìl algoritmus smysl, musí bıt plnì srozumitelnı pro toho, kdo ho bude vykonávat
-* Proto by mìl splòovat následující vlastnosti:
-* __správnost__ - vıstup algoritmu musí bıt správnı
-* __rezultativnost__ - mdy musí pøinést vısledek (klidnì i hlášení o chybì) 
-* __koneènost__ - mìl by mít jasnì stanovené dílèí fáze které vedou z bodu A do bodu B 
-* __hromadnost__ - algoritmus musí bıt aplikovatelnı na urèitou skupinu úloh. Nikdy by nemìl øešit jen jeden problém
-* __determinovanost (jednoznaènost)__ - musí bıt pøesnì dané, co následuje po splnìní urèitého kroku
-* __opakovatelnost__ - pøi zadání stejnıch vstupních dat musí algoritmus vrátit opìt shodnı vısledek
-## vztah algoritmù a programovacích jazykù
-## vıpoèet asymptotické sloitosti (funkce omikron, omega, theta)
-* algoritmus je øešení na danı problém, 
-* funkce __omega__ - nejlepší scénáø
-* funkce __theta__ - prùmìrnı scénáø
-* funkce __omikron__ - nejhorší scénáø
+* Aby mÄ›l algoritmus smysl, musÃ­ bÃ½t plnÄ› srozumitelnÃ½ pro toho, kdo ho bude vykonÃ¡vat
+* Proto by mÄ›l splÅˆovat nÃ¡sledujÃ­cÃ­ vlastnosti:
+* __sprÃ¡vnost__ - vÃ½stup algoritmu musÃ­ bÃ½t sprÃ¡vnÃ½
+* __rezultativnost__ - mÅ¾dy musÃ­ pÅ™inÃ©st vÃ½sledek (klidnÄ› i hlÃ¡Å¡enÃ­ o chybÄ›) 
+* __koneÄnost__ - mÄ›l by mÃ­t jasnÄ› stanovenÃ© dÃ­lÄÃ­ fÃ¡ze kterÃ© vedou z bodu A do bodu B 
+* __hromadnost__ - algoritmus musÃ­ bÃ½t aplikovatelnÃ½ na urÄitou skupinu Ãºloh. Nikdy by nemÄ›l Å™eÅ¡it jen jeden problÃ©m
+* __determinovanost (jednoznaÄnost)__ - musÃ­ bÃ½t pÅ™esnÄ› danÃ©, co nÃ¡sleduje po splnÄ›nÃ­ urÄitÃ©ho kroku
+* __opakovatelnost__ - pÅ™i zadÃ¡nÃ­ stejnÃ½ch vstupnÃ­ch dat musÃ­ algoritmus vrÃ¡tit opÄ›t shodnÃ½ vÃ½sledek
+## vztah algoritmÅ¯ a programovacÃ­ch jazykÅ¯
+## vÃ½poÄet asymptotickÃ© sloÅ¾itosti (funkce omikron, omega, theta)
+* algoritmus je Å™eÅ¡enÃ­ na danÃ½ problÃ©m, 
+* funkce __omega__ - nejlepÅ¡Ã­ scÃ©nÃ¡Å™
+* funkce __theta__ - prÅ¯mÄ›rnÃ½ scÃ©nÃ¡Å™
+* funkce __omikron__ - nejhorÅ¡Ã­ scÃ©nÃ¡Å™
 ## algoritmy v poli
 ### min/max
-* pøíklad hledání min/max hodnoty
+* pÅ™Ã­klad hledÃ¡nÃ­ min/max hodnoty
 ```
 int[] array1 = { 1, 2, 3, 4, 5, };
 
@@ -36,10 +37,10 @@ for (int i = 1; i < array1.Length; i++)
     }
 }
 ```
-* nebo pouít funkci `Max()` a `Min()` :relaxed:
+* nebo pouÅ¾Ã­t funkci `Max()` a `Min()` :relaxed:
 #### <hr>
-### otoèení (reverse array)
-* pøíklad algoritmu otoèení
+### otoÄenÃ­ (reverse array)
+* pÅ™Ã­klad algoritmu otoÄenÃ­
 ```
 static void Main(string[] args)
 {
@@ -60,8 +61,8 @@ public static void Swap(int[] array, int x, int y)
 }
 ```
 #### <hr>
-### vkládání
-* pøíklad algoritmu vkládání
+### vklÃ¡dÃ¡nÃ­
+* pÅ™Ã­klad algoritmu vklÃ¡dÃ¡nÃ­
 ```
 int x = 23;
 int positionToBeInserted = 3;
@@ -85,8 +86,8 @@ for (int i = 0; i < oldArray.Length + 1; i++)
     }
 }
 ```
-### lineární vyhledávání
-* pøíklad lineárního vyhledávání
+### lineÃ¡rnÃ­ vyhledÃ¡vÃ¡nÃ­
+* pÅ™Ã­klad lineÃ¡rnÃ­ho vyhledÃ¡vÃ¡nÃ­
 ```
 int[] array = { 1, 2, 3, 4, 5 };
 int target = 2;
@@ -99,7 +100,7 @@ for (int i = 0; i < array.Length; i++)
     }
 }
 ```
-### binární vyhledávání
+### binÃ¡rnÃ­ vyhledÃ¡vÃ¡nÃ­
 ```
 int[] array = { 1, 2, 3, 4, 5 };
             
@@ -128,9 +129,9 @@ while (low <= high)
     }
 }
 ```
-## øadící algoritmy
+## Å™adÃ­cÃ­ algoritmy
 ### bubble sort
-* Bubble Sort je jednoduchı tøídicí algoritmus, kterı je zaloenı na porovnávání, pøi kterém se porovnává kadá dvojice sousedních prvkù a prvky se prohodí, pokud nejsou v poøadí
+* Bubble Sort je jednoduchÃ½ tÅ™Ã­dicÃ­ algoritmus, kterÃ½ je zaloÅ¾enÃ½ na porovnÃ¡vÃ¡nÃ­, pÅ™i kterÃ©m se porovnÃ¡vÃ¡ kaÅ¾dÃ¡ dvojice sousednÃ­ch prvkÅ¯ a prvky se prohodÃ­, pokud nejsou v poÅ™adÃ­
 ```
 int[] array = { 108, 23, 69, 420, 9 };
 int temporary;
@@ -148,7 +149,7 @@ for (int j = 0; j <= array.Length - 2; j++)
     }
 }
 
-Console.WriteLine("Seøazeno:");
+Console.WriteLine("SeÅ™azeno:");
 foreach (int p in array)
 {
     Console.Write($"{p} ");
@@ -157,13 +158,13 @@ Console.ReadLine();
 ```
 ##### <hr>
 ### selection sort
-* Selection Sort je tøídící algoritmus, funguje tak, e je seznam rozdìlen na dvì èásti
-* v jedné èásti jsou všechny prvky setøídìné a v druhé èásti jsou poloky nesetøídìné
-* Nejprve z pole vybereme maximální nebo minimální hodnoty, po získání hodnot (øeknìme nejmenších) je umístíme na zaèátek seznamu tak, e hodnoty na prvním místì nahradíme nejmenšími hodnotami. Po provedení se pole zmenší 
+* Selection Sort je tÅ™Ã­dÃ­cÃ­ algoritmus, funguje tak, Å¾e je seznam rozdÄ›len na dvÄ› ÄÃ¡sti
+* v jednÃ© ÄÃ¡sti jsou vÅ¡echny prvky setÅ™Ã­dÄ›nÃ© a v druhÃ© ÄÃ¡sti jsou poloÅ¾ky nesetÅ™Ã­dÄ›nÃ©
+* Nejprve z pole vybereme maximÃ¡lnÃ­ nebo minimÃ¡lnÃ­ hodnoty, po zÃ­skÃ¡nÃ­ hodnot (Å™eknÄ›me nejmenÅ¡Ã­ch) je umÃ­stÃ­me na zaÄÃ¡tek seznamu tak, Å¾e hodnoty na prvnÃ­m mÃ­stÄ› nahradÃ­me nejmenÅ¡Ã­mi hodnotami. Po provedenÃ­ se pole zmenÅ¡Ã­ 
 ##### <hr>
 ### insertion sort
-* Insertion Sort je jednoduchı tøídicí algoritmus, kterı sestavuje vısledné setøídìné pole po jednotlivıch polokách pomocí porovnávání.
-* Na velkıch seznamech je mnohem ménì efektivní ne pokroèilejší algoritmy, jako je quicksort, heapsort nebo merge sort
+* Insertion Sort je jednoduchÃ½ tÅ™Ã­dicÃ­ algoritmus, kterÃ½ sestavuje vÃ½slednÃ© setÅ™Ã­dÄ›nÃ© pole po jednotlivÃ½ch poloÅ¾kÃ¡ch pomocÃ­ porovnÃ¡vÃ¡nÃ­.
+* Na velkÃ½ch seznamech je mnohem mÃ©nÄ› efektivnÃ­ neÅ¾ pokroÄilejÅ¡Ã­ algoritmy, jako je quicksort, heapsort nebo merge sort
 ```
 int[] array = new int[10] { 23, 9, 85, 12, 99, 34, 60, 15, 100, 1 };
 int n = 10;
@@ -185,7 +186,7 @@ for (int i = 1; i < n; i++)
         else flag = 1;
     }
 }
-Console.Write("Seøazeno: ");
+Console.Write("SeÅ™azeno: ");
 for (int i = 0; i < n; i++)
 {
     Console.Write(array[i] + " ");
@@ -193,30 +194,30 @@ for (int i = 0; i < n; i++)
 ```
 ##### <hr>
 ### quick sort
-* Øazení Quick Sort se provádí tak, e se seznam rozdìlí na dvì èásti
-* Zpoèátku se pomocí rozdìlovacího algoritmu vybere otoènı prvek (pivot)
-* V levé èásti pivotu jsou uloeny menší hodnoty ne pivot a v pravé èásti vìtší hodnoty
-* Po rozdìlení se kadı samostatnı seznam rozdìlí stejnım postupem
+* Å˜azenÃ­ Quick Sort se provÃ¡dÃ­ tak, Å¾e se seznam rozdÄ›lÃ­ na dvÄ› ÄÃ¡sti
+* ZpoÄÃ¡tku se pomocÃ­ rozdÄ›lovacÃ­ho algoritmu vybere otoÄnÃ½ prvek (pivot)
+* V levÃ© ÄÃ¡sti pivotu jsou uloÅ¾eny menÅ¡Ã­ hodnoty neÅ¾ pivot a v pravÃ© ÄÃ¡sti vÄ›tÅ¡Ã­ hodnoty
+* Po rozdÄ›lenÃ­ se kaÅ¾dÃ½ samostatnÃ½ seznam rozdÄ›lÃ­ stejnÃ½m postupem
 ##### <hr>
 ### merge sort
-* Merge Sort je rekurzivní tøídicí algoritmus, kterı pouívá metody `Divide()` a `Conquer()`
-* Rozdìlí pole na dvì èásti a pak zavolá sám sebe pro kadou z tìchto dvou èástí
-* Tento proces pokraèuje, dokud není pole setøídìno
-* Je dobrı pro tøídìní __Linked Listù__
-* je stabilní, co znamená, e stejné prvky v poli si zachovávají své pùvodní vzájemné pozice
+* Merge Sort je rekurzivnÃ­ tÅ™Ã­dicÃ­ algoritmus, kterÃ½ pouÅ¾Ã­vÃ¡ metody `Divide()` a `Conquer()`
+* RozdÄ›lÃ­ pole na dvÄ› ÄÃ¡sti a pak zavolÃ¡ sÃ¡m sebe pro kaÅ¾dou z tÄ›chto dvou ÄÃ¡stÃ­
+* Tento proces pokraÄuje, dokud nenÃ­ pole setÅ™Ã­dÄ›no
+* Je dobrÃ½ pro tÅ™Ã­dÄ›nÃ­ __Linked ListÅ¯__
+* je stabilnÃ­, coÅ¾ znamenÃ¡, Å¾e stejnÃ© prvky v poli si zachovÃ¡vajÃ­ svÃ© pÅ¯vodnÃ­ vzÃ¡jemnÃ© pozice
 ##### <hr>
 ### heap sort
-* Heap Sort je tøídicí algoritmus, kterı vyuívá datovou strukturu haldy
-* Pokadé se odstraní koøenovı prvek haldy, tj. nejvìtší prvek, a uloí se do pole
-* Je nahrazen listovım prvkem nejvzdálenìjším zprava a poté je halda znovu vytvoøena
-* To se provádí tak dlouho, dokud v haldì nezùstane ádnı další prvek a pole není setøídìno
+* Heap Sort je tÅ™Ã­dicÃ­ algoritmus, kterÃ½ vyuÅ¾Ã­vÃ¡ datovou strukturu haldy
+* PokaÅ¾dÃ© se odstranÃ­ koÅ™enovÃ½ prvek haldy, tj. nejvÄ›tÅ¡Ã­ prvek, a uloÅ¾Ã­ se do pole
+* Je nahrazen listovÃ½m prvkem nejvzdÃ¡lenÄ›jÅ¡Ã­m zprava a potÃ© je halda znovu vytvoÅ™ena
+* To se provÃ¡dÃ­ tak dlouho, dokud v haldÄ› nezÅ¯stane Å¾Ã¡dnÃ½ dalÅ¡Ã­ prvek a pole nenÃ­ setÅ™Ã­dÄ›no
 ```
 public static void Main()
 {
     int[] array = {55, 25, 89, 34, 12, 19, 78, 95, 1, 100};
     int n = 10, i;
     HeapSort(array, 10);
-    Console.Write("Seøazeno: ");
+    Console.Write("SeÅ™azeno: ");
     for (i = 0; i < n; i++)
     {
         Console.Write(array[i] + " ");
@@ -265,6 +266,6 @@ public static void Main()
         }
     }
 ```
-## stabilita øazení
-*https://cs.wikipedia.org/wiki/Øadicí_algoritmus*
-## implementace jednoduchıch algoritmù
+## stabilita Å™azenÃ­
+*https://cs.wikipedia.org/wiki/Å˜adicÃ­_algoritmus*
+## implementace jednoduchÃ½ch algoritmÅ¯
