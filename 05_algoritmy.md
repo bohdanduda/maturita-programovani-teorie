@@ -163,6 +163,25 @@ Console.ReadLine();
 * Selection Sort je třídící algoritmus, funguje tak, že je seznam rozdělen na dvě části
 * v jedné části jsou všechny prvky setříděné a v druhé části jsou položky nesetříděné
 * Nejprve z pole vybereme maximální nebo minimální hodnoty, po získání hodnot (řekněme nejmenších) je umístíme na začátek seznamu tak, že hodnoty na prvním místě nahradíme nejmenšími hodnotami. Po provedení se pole zmenší 
+```
+int[] array = { 108, 23, 69, 420, 9 };
+
+for (int i = 0; i < array.Length - 1; i++)
+{
+    int smallestVal = i;
+    for (int j = i + 1; j < array.Length; j++)
+    {
+        if (array[j] < array[smallestVal])
+        {
+            smallestVal = j;
+        }
+    }
+
+    int temporary = array[smallestVal];
+    array[smallestVal] = array[i];
+    array[i] = temporary;
+}
+```
 ##### <hr>
 ### insertion sort
 * Insertion Sort je jednoduchý třídicí algoritmus, který sestavuje výsledné setříděné pole po jednotlivých položkách pomocí porovnávání.
