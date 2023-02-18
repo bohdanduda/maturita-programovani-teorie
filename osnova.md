@@ -9,7 +9,7 @@
 
 4. [řídící struktury](04_ridici_struktury.md) - podmínky, cykly, výjimky (vyhození a odchyt)
 
-5. algoritmy - vlastnosti, vztah algoritmů a programovacích jazyků, výpočet asymptotické složitosti (funkce omikron, omega, theta), algoritmy v poli (min/max, otočení, vkládání, linární vyhl. binární vyhl. řadící alg. - bubble sort, selection sort, insertion sort, quick sort, merge sort, heap sort), stabilita řazení, implementace jednoduchých alg.
+5. [algoritmy](5_algoritmy.md) - vlastnosti, vztah algoritmů a programovacích jazyků, výpočet asymptotické složitosti (funkce omikron, omega, theta), algoritmy v poli (min/max, otočení, vkládání, linární vyhl. binární vyhl. řadící alg. - bubble sort, selection sort, insertion sort, quick sort, merge sort, heap sort), stabilita řazení, implementace jednoduchých alg.
 
 6. [rekurze](06_rekurze.md) - definice, vztah rekurzivního a iterativního algoritmu, příklady
 
@@ -27,7 +27,7 @@
 
 13. [pokročilé prvky OOP](13_pokrocile_oop.md) - statické vlastnosti a metody, statický konstruktor, vnitřní třídy, generické třídy, generické metody
 
-14. UML - popis UML, základní diagramy, Class diagram (diagram tříd) a význam jednotlivých symbolů v kódu, UseCase diagram (diagram případů užití) , State diagram, Sequence diagram (sekvenční diagram)
+14. [UML](14_uml.md) - popis UML, základní diagramy, Class diagram (diagram tříd) a význam jednotlivých symbolů v kódu, UseCase diagram (diagram případů užití) , State diagram, Sequence diagram (sekvenční diagram)
 
 15. [regulární výrazy](15_regularni_vyrazy.md) - význam jednotlivých speciálních znaků (výčet, opakování, povinnost, začátek/konec, ...), jejich praktické využití
 
