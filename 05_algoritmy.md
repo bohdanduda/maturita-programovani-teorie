@@ -11,7 +11,7 @@
 * __opakovatelnost__ - při zadání stejných vstupních dat musí algoritmus vrátit opět shodný výsledek
 ## vztah algoritmů a programovacích jazyků
 ## výpočet asymptotické složitosti (funkce omikron, omega, theta)
-* algoritmus je řešení na daný problém, 
+* složitost algoritmu se vyjadřuje počtem provedených základních operací (arit. operace, podmínky, přesuny v paměti)
 * funkce __omega__ - nejlepší scénář
 * funkce __theta__ - průměrný scénář
 * funkce __omikron__ - nejhorší scénář
@@ -130,6 +130,8 @@ while (low <= high)
 }
 ```
 ## řadící algoritmy
+* Řadící algoritmy slouží k setřízení jednotlivých prvků vstupního souboru (obvykle seznamu) dle jejich velikosti
+* Při volbě vhodného řadícího algoritmu je třeba dbát na několik kritérií - výkon algoritmu (jeho časová složitost), implementační složitost, vhodnost pro danou datovou strukturu a stabilita algoritmu
 ### bubble sort
 * Bubble Sort je jednoduchý třídicí algoritmus, který je založený na porovnávání, při kterém se porovnává každá dvojice sousedních prvků a prvky se prohodí, pokud nejsou v pořadí
 ```
