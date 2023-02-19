@@ -17,6 +17,15 @@
 * switch porovnává předanou hodnotu s předem specifikovanými konstantami. V případě shody hodnoty s konstantou, vykoná příkaz, který je definován za ní
 * Syntaxe `CASE`
 ![Case syntaxe](https://miro.medium.com/max/1110/1*jgsNHffPE39208jn4cUI6g.png)
+  ```
+  int x = int.Parse(Console.ReadLine());
+  switch (true)
+  {
+    case true when x == 2:
+        Console.WriteLine("2");
+    break;  
+  }
+  ```
 
 ## cykly
 * cyklus je řídící struktura, kde se opakovaně provádí posloupnost příkazů. Opakování i ukončení cyklu je řízeno nějakou podmínku
