@@ -26,3 +26,88 @@
 ## principy a použití
 
 ## implementace fronty zásobníku v poli a ve spojovém seznamu
+
+* příklad implementace zásobníku v poli
+```
+        private int top;
+        private int[] array;
+
+        public Stack(int size)
+        {
+            top = -1;
+            array = new int[size];
+        }
+
+        public void Push(int item)
+        {
+            if (top > array.Length - 1)
+            {
+                throw new Exception("Stack is full");
+            }
+            array[++top] = item;
+        }
+
+        public int Peek()
+        {
+            if (top == -1)
+            {
+                throw new Exception("Stack is empty");
+            }
+            return array[top];
+        }
+
+        public int Pop()
+        {
+            if (top == -1)
+            {
+                throw new Exception("Stack is empty");
+            }
+            return array[top--];
+        }
+```
+
+* příklad implementace fronty v poli
+```
+internal class Queue
+    {
+        private int front;
+        private int rear;
+        private int[] array;
+
+        public Queue(int size)
+        {
+            front = 0;
+            rear = -1;
+            array = new int[size];
+        }
+
+        public void Enqueue(int item)
+        {
+            if (rear == array.Length-1)
+            {
+                throw new Exception("Queue is full");
+            }
+            array[++rear] = item;
+        }
+
+        public int Dequeue()
+        {
+            if (front > rear)
+            {
+                throw new Exception("Queue is empty");
+            }
+            int item = array[front];
+            front++;
+            return item;
+        }
+
+        public int Peek()
+        {
+            if (front > rear)
+            {
+                throw new Exception("Queue is empty");
+            }
+            return array[front];
+        }
+    }
+```    
