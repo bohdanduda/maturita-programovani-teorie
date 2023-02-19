@@ -13,14 +13,28 @@
 * Je to nejrychlejší algoritmus na řazení a v praxi se používá k třídění prvků. Funguje dobře jak na velkých, tak na malých polích a je paměťově nenáročný.
 * Funguje tak, že označí jeden prvek v poli jako pivot, poté se přesune na konec pole a to se rozdělí na dvě půlky. Obě půlky se poté rekurzivně seřadí.
 ## příklady rekurze
+* Výpočet faktoriálu rekurzivně:
 ```
-public int FindFactorial(int inputNumber)
+public int FindFactorialRecursive(int inputNumber)
 {
-	if(inputNumber == 0)
-        {
-                return 1;
-        }
-	return inputNumber * FindFactorial(inputNumber-1);
+    if (inputNumber == 0)
+    {
+	return 1;
+    }
+    return inputNumber * FindFactorialRecursive(inputNumber - 1);
 }
 ```
 * Funkci ``FindFactorial()`` voláme znova ještě před tím, než byla dokončena, proto je příklad __rekurzivní__
+
+* Výpočet faktoriálu iterativně:
+```
+public int FindFactorialIterative(int inputNumber)
+{
+    int factorial = 1;
+    for (int i = 1; i <= inputNumber; i++)
+    {
+	factorial = factorial * i;
+    }
+    return factorial;
+}
+```
