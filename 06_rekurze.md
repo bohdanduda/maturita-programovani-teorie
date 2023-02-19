@@ -38,3 +38,5 @@ public int FindFactorialIterative(int inputNumber)
     return factorial;
 }
 ```
+## Doplňky
+* Procházení stromové struktury souborového systému - frontou, nebo zásobníkem
