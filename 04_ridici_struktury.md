@@ -17,6 +17,7 @@
 * switch porovnává předanou hodnotu s předem specifikovanými konstantami. V případě shody hodnoty s konstantou, vykoná příkaz, který je definován za ní
 * Syntaxe `CASE`
 ![Case syntaxe](https://miro.medium.com/max/1110/1*jgsNHffPE39208jn4cUI6g.png)
+* Case jako logický příkaz
   ```
   int x = int.Parse(Console.ReadLine());
   switch (true)
