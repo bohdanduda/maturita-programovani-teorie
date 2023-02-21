@@ -1,66 +1,73 @@
 # UML
 ## popis UML
-* UML (Unified Modeling Language) je soubor grafickıch notací, kterı se pouívá pøi vıvoji softwaru
+* UML (Unified Modeling Language) je soubor grafickÃ½ch notacÃ­, kterÃ½ se pouÅ¾Ã­vÃ¡ pÅ™i vÃ½voji softwaru
+* dÃ¡ se takÃ© vyuÅ¾Ã­t v post-vÃ½vojovÃ© prÃ¡ci
 * Vyvinula ho firma Rational Software v 90. letech
 
-## základní diagramy
-* diagramy se dìlí na 2 základní skupiny: 
+## zÃ¡kladnÃ­ diagramy
+* diagramy se dÄ›lÃ­ na 2 zÃ¡kladnÃ­ skupiny: 
 
-* __Diagramy struktury__ (Structure Diagrams) - Popisují strukturu systému, tedy z èeho je sloenı
-* __Diagramy chování__ (Behaviour Diagram) - Popisují chování systému, tedy jak funguje
-* diagram chování má ještì samostatnou skupinu: 
-* __Diagramy interakce__ (Interaction diagrams) - Popisují interakci mezi jednotlivımi èástmi systému
+* __Diagramy struktury__ (Structure Diagrams) - PopisujÃ­ strukturu systÃ©mu, tedy z Äeho je sloÅ¾enÃ½
+* __Diagramy chovÃ¡nÃ­__ (Behaviour Diagram) - PopisujÃ­ chovÃ¡nÃ­ systÃ©mu, tedy jak funguje
+* diagram chovÃ¡nÃ­ mÃ¡ jeÅ¡tÄ› samostatnou skupinu: 
+* __Diagramy interakce__ (Interaction diagrams) - PopisujÃ­ interakci mezi jednotlivÃ½mi ÄÃ¡stmi systÃ©mu
 
 ![](images/diagrams.png)
 
-## Class diagram a vıznam jednotlivıch symbolù v kódu
-* Diagram tøíd popisuje statickou strukturu systému, znázoròuje datové struktury a operace u objektù a souvislosti mezi objekty
+## Class diagram a vÃ½znam jednotlivÃ½ch symbolÅ¯ v kÃ³du
+* Diagram tÅ™Ã­d popisuje statickou strukturu systÃ©mu, znÃ¡zorÅˆuje datovÃ© struktury a operace u objektÅ¯ a souvislosti mezi objekty
 
-* Znázoròuje datovı model systému od konceptuální úrovnì a po implementaci
-* Datové struktury zaøazuje do tøíd a zobrazuje vztahy tìchto tøíd
-* Je hlavním stavebním kamenem objìktovì orientovaného modelování, pouívá se jak pro bìné koncepèní modelování, tak i k detailnímu modelování èi pøevodu modelù do programového kódu
-* Další souèástí tøíd jsou také symboly, které __oznaèují viditelnost__ jednotlivıch èástí diagramu a tøíd
+* ZnÃ¡zorÅˆuje datovÃ½ model systÃ©mu od konceptuÃ¡lnÃ­ ÃºrovnÄ› aÅ¾ po implementaci
+* DatovÃ© struktury zaÅ™azuje do tÅ™Ã­d a zobrazuje vztahy tÄ›chto tÅ™Ã­d
+* Je hlavnÃ­m stavebnÃ­m kamenem objÄ›ktovÄ› orientovanÃ©ho modelovÃ¡nÃ­, pouÅ¾Ã­vÃ¡ se jak pro bÄ›Å¾nÃ© koncepÄnÃ­ modelovÃ¡nÃ­, tak i k detailnÃ­mu modelovÃ¡nÃ­ Äi pÅ™evodu modelÅ¯ do programovÃ©ho kÃ³du
+* DalÅ¡Ã­ souÄÃ¡stÃ­ tÅ™Ã­d jsou takÃ© symboly, kterÃ© __oznaÄujÃ­ viditelnost__ jednotlivÃ½ch ÄÃ¡stÃ­ diagramu a tÅ™Ã­d
 ![](images/uml_relationship.png)
 
-* Další dùleitı pojem je __multiplicita__ (mohutnost) vztahù
-* Udává kolik instancí jedné tøídy mùe bıt svázáno s instancí tøídy druhé
+* DalÅ¡Ã­ dÅ¯leÅ¾itÃ½ pojem je __multiplicita__ (mohutnost) vztahÅ¯
+* UdÃ¡vÃ¡ kolik instancÃ­ jednÃ© tÅ™Ã­dy mÅ¯Å¾e bÃ½t svÃ¡zÃ¡no s instancÃ­ tÅ™Ã­dy druhÃ©
 ![](images/uml_multiplicity.png)
 
 * Vztahy: 
 ```
-Na úrovni instance:
+Na Ãºrovni instance:
 
-Závislost (Dependency)
+ZÃ¡vislost (Dependency)
 Asociace (Association)
 Agregace (Aggregation)
-Kompozice, sloení (Composition)
+Kompozice, sloÅ¾enÃ­ (Composition)
 
-Na úrovni tøídy:
+Na Ãºrovni tÅ™Ã­dy:
 
-Dìdiènost (Generalization)
+DÄ›diÄnost (Generalization)
 Realizace (Realization)
-Závislost (Dependency)
+ZÃ¡vislost (Dependency)
 ```
 ## UseCase diagram
-* __Diagram pøípadù uití__ zachycuje vnìjší pohled na modelovanı systém a tím pomáhá odhalit hranice systému a slouí jako podklad pro odhady rozsahu
+* __Diagram pÅ™Ã­padÅ¯ uÅ¾itÃ­__ zachycuje vnÄ›jÅ¡Ã­ pohled na modelovanÃ½ systÃ©m a tÃ­m pomÃ¡hÃ¡ odhalit hranice systÃ©mu a slouÅ¾Ã­ jako podklad pro odhady rozsahu
+* SklÃ¡dÃ¡ se ze 3 ÄÃ¡stÃ­:
+   1. Actor - uÅ¾ivatel
+   2. System Boundary - hranice systÃ©mu, samotnÃ½ program
+   3. UseCase - scÃ©nÃ¡Å™ uÅ¾itÃ­
 
-* Jde o posloupnost souvisejících transakcí mezi úèastníkem (zpravidla uivatelem v urèité roli, ale také jinım systémem) a systémem bìhem vzájemného dialogu
-* Hlavním úèelem je zachycení aktérù, kteøí se systémem komunikují a vztahù mezi slubami a tìmi, kterım jsou poskytovány, a to vizuální i textovou podobou
+* ÄÃ¡ra s otevÅ™enou Å¡ipkou - include (dÃ¡vat pozor na smÄ›ry) - zprava do leva (povinnÄ› se zahrne do scÃ©nÃ¡Å™e), zprava do leva - extend (volitelnÄ› rozÅ¡iÅ™uje)
+* k diagramu je vÅ¾dycky potÅ™eba dokument, kterÃ½ slovnÄ› popisuje projekt 
+* Jde o posloupnost souvisejÃ­cÃ­ch transakcÃ­ mezi ÃºÄastnÃ­kem (zpravidla uÅ¾ivatelem v urÄitÃ© roli, ale takÃ© jinÃ½m systÃ©mem) a systÃ©mem bÄ›hem vzÃ¡jemnÃ©ho dialogu
+* HlavnÃ­m ÃºÄelem je zachycenÃ­ aktÃ©rÅ¯, kteÅ™Ã­ se systÃ©mem komunikujÃ­ a vztahÅ¯ mezi sluÅ¾bami a tÄ›mi, kterÃ½m jsou poskytovÃ¡ny, a to vizuÃ¡lnÃ­ i textovou podobou
 ![](images/uml_useCase.png)
 ## State diagram
-* __Stavovı diagram__ je zpùsob grafického zápisu vıvoje systému, kterı má koneènı poèet stavù
+* __StavovÃ½ diagram__ je zpÅ¯sob grafickÃ©ho zÃ¡pisu vÃ½voje systÃ©mu, kterÃ½ mÃ¡ koneÄnÃ½ poÄet stavÅ¯
 
-* Takovım systémem mùe bıt koneènı automat (stavovı automat) èi další podobné systémy, které vyjadøují stavy urèitého objektu a pøechody (pøechodovou funkci) mezi nimi.
-* Diagram poskytuje sadu elementù pro popis chování systému, kterı je vyjádøen prùchodem stavy a je øízen vnìjším vstupem. 
+* TakovÃ½m systÃ©mem mÅ¯Å¾e bÃ½t koneÄnÃ½ automat (stavovÃ½ automat) Äi dalÅ¡Ã­ podobnÃ© systÃ©my, kterÃ© vyjadÅ™ujÃ­ stavy urÄitÃ©ho objektu a pÅ™echody (pÅ™echodovou funkci) mezi nimi.
+* Diagram poskytuje sadu elementÅ¯ pro popis chovÃ¡nÃ­ systÃ©mu, kterÃ½ je vyjÃ¡dÅ™en prÅ¯chodem stavy a je Å™Ã­zen vnÄ›jÅ¡Ã­m vstupem. 
 
 TODO: https://cs.wikipedia.org/wiki/Stavov%C3%BD_diagram
 
 ## Sequence diagram
-* __Sekvenèní diagram__ zachycuje èasovì uspoøádanou posloupnost zasílání zpráv mezi objekty
-* nejèastìji znázoròuje spolupráci nìkolika vzorovıch objektù v rámci jednoho pøípadu uití
+* __SekvenÄnÃ­ diagram__ zachycuje ÄasovÄ› uspoÅ™Ã¡danou posloupnost zasÃ­lÃ¡nÃ­ zprÃ¡v mezi objekty
+* nejÄastÄ›ji znÃ¡zorÅˆuje spoluprÃ¡ci nÄ›kolika vzorovÃ½ch objektÅ¯ v rÃ¡mci jednoho pÅ™Ã­padu uÅ¾itÃ­
 
 VZHLED:
-* Jednotlivé procesy èi objekty zapojené do popisovaného pøípadu uití jsou umístìn v horní èásti diagramu
-* Od nich pak vedou smìrem dolù èáry (lifelines), které znázoròují bìh èasu
-* Mezi èarami jsou pak zakresleny vodorovné šipky rùznıch typù, které reprezentují zprávy posílané mezi objekty, plné šipky znaèí volání, pøerušované pak odpovìï, podlouhlé obdélníky na svislıch èarách vyznaèují dobu zpracovávání dané zprávy èi èekání na odpovìï
+* JednotlivÃ© procesy Äi objekty zapojenÃ© do popisovanÃ©ho pÅ™Ã­padu uÅ¾itÃ­ jsou umÃ­stÄ›n v hornÃ­ ÄÃ¡sti diagramu
+* Od nich pak vedou smÄ›rem dolÅ¯ ÄÃ¡ry (lifelines), kterÃ© znÃ¡zorÅˆujÃ­ bÄ›h Äasu
+* Mezi Äarami jsou pak zakresleny vodorovnÃ© Å¡ipky rÅ¯znÃ½ch typÅ¯, kterÃ© reprezentujÃ­ zprÃ¡vy posÃ­lanÃ© mezi objekty, plnÃ© Å¡ipky znaÄÃ­ volÃ¡nÃ­, pÅ™eruÅ¡ovanÃ© pak odpovÄ›Ä, podlouhlÃ© obdÃ©lnÃ­ky na svislÃ½ch ÄarÃ¡ch vyznaÄujÃ­ dobu zpracovÃ¡vÃ¡nÃ­ danÃ© zprÃ¡vy Äi ÄekÃ¡nÃ­ na odpovÄ›Ä
 ![](images/uml_sequence.png)
