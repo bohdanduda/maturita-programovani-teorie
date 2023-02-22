@@ -1,27 +1,27 @@
-# databáze
-## Pøipojení k MySQL/MSSQL
-* Pro pøipojení musíme stáhnout balíèek NuGet
-* Poté ještì vytvoøit pøipojovací øetìzec
+# databÃ¡ze
+## PÅ™ipojenÃ­ k MySQL/MSSQL
+* Pro pÅ™ipojenÃ­ musÃ­me stÃ¡hnout balÃ­Äek NuGet
+* PotÃ© jeÅ¡tÄ› vytvoÅ™it pÅ™ipojovacÃ­ Å™etÄ›zec
 ```
 "ConnectionStrings": 
 {
     "Default": "Server=YOURSERVER;User ID=YOURUSERID;Password=YOURPASSWORD;Database=YOURDATABASE"
 }
 ```
-* Databázi ovládáme z tøídy __Controller__
-## ORM - entity famework
-* Entity Framework v jazyce C# je sada technologií ADO.NET, které pomáhají pøi vıvoji softwaru zaloeného na datech
-* C# Entity framework je rámec ORM (__Object Relational Mapping__), kterı vıvojáøùm poskytuje automatizovanı zpùsob ukládání a pøístupu k databázím
-* Vıhody pouívání ORM: __Úspora èasu__ a  __sledovatelnost zmìn__ provedenıch v databázi - existují knihovny specializované na ORM, které zaznamenávají celou historii dat od jejich vytvoøení
-## Mapování tabulek
+* DatabÃ¡zi ovlÃ¡dÃ¡me z tÅ™Ã­dy __Controller__
+## ORM - entity framework
+* Entity Framework v jazyce C# je sada technologiÃ­ ADO.NET, kterÃ© pomÃ¡hajÃ­ pÅ™i vÃ½voji softwaru zaloÅ¾enÃ©ho na datech
+* C# Entity framework je rÃ¡mec ORM (__Object Relational Mapping__), kterÃ½ vÃ½vojÃ¡Å™Å¯m poskytuje automatizovanÃ½ zpÅ¯sob uklÃ¡dÃ¡nÃ­ a pÅ™Ã­stupu k databÃ¡zÃ­m
+* VÃ½hody pouÅ¾Ã­vÃ¡nÃ­ ORM: __Ãšspora Äasu__ a  __sledovatelnost zmÄ›n__ provedenÃ½ch v databÃ¡zi - existujÃ­ knihovny specializovanÃ© na ORM, kterÃ© zaznamenÃ¡vajÃ­ celou historii dat od jejich vytvoÅ™enÃ­
+## MapovÃ¡nÃ­ tabulek
 ## vazby
 ## DbContext
-__Most mezi Entity Framework a databází__
-* DbContext je tøída, která pøedstavuje relaci s databází a lze ji pouít k dotazování a ukládání instancí entit
-* Cokoli dìláme v Entity Frameworku (získáváme data, ukládáme data, naèítáme data nebo provádíme jakoukoli jinou opraci), provádíme prostøednictvím DbContextu
+__Most mezi Entity Framework a databÃ¡zÃ­__
+* DbContext je tÅ™Ã­da, kterÃ¡ pÅ™edstavuje relaci s databÃ¡zÃ­ a lze ji pouÅ¾Ã­t k dotazovÃ¡nÃ­ a uklÃ¡dÃ¡nÃ­ instancÃ­ entit
+* Cokoli dÄ›lÃ¡me v Entity Frameworku (zÃ­skÃ¡vÃ¡me data, uklÃ¡dÃ¡me data, naÄÃ­tÃ¡me data nebo provÃ¡dÃ­me jakoukoli jinou opraci), provÃ¡dÃ­me prostÅ™ednictvÃ­m DbContextu
 ## Repository
-* Repository pattern slouí k abstrakci zpùsobu, jakım jsou data uchovávána nebo naèítána z databáze
-* Myšlenkou je oddìlit vrstvu pro pøístup k datùm od vrstvy pro obchodní pøístup k aplikaci, take operace (jako je pøidávání, aktualizace, mazání a vıbìr poloek z kolekce) se provádìjí pomocí jednoduchıch metod, ani by se øešily problémy s databází (jako jsou pøipojení, pøíkazy atd.)
+* Repository pattern slouÅ¾Ã­ k abstrakci zpÅ¯sobu, jakÃ½m jsou data uchovÃ¡vÃ¡na nebo naÄÃ­tÃ¡na z databÃ¡ze
+* MyÅ¡lenkou je oddÄ›lit vrstvu pro pÅ™Ã­stup k datÅ¯m od vrstvy pro obchodnÃ­ pÅ™Ã­stup k aplikaci, takÅ¾e operace (jako je pÅ™idÃ¡vÃ¡nÃ­, aktualizace, mazÃ¡nÃ­ a vÃ½bÄ›r poloÅ¾ek z kolekce) se provÃ¡dÄ›jÃ­ pomocÃ­ jednoduchÃ½ch metod, aniÅ¾ by se Å™eÅ¡ily problÃ©my s databÃ¡zÃ­ (jako jsou pÅ™ipojenÃ­, pÅ™Ã­kazy atd.)
 ## LinQ
-* LINQ (__Language Integrated Query__) je jednotná syntaxe dotazù v jazycích C# a VB.NET pro získávání dat z rùznıch zdrojù a formátù
-* poskytuje jednotné dotazovací rozhraní pro rùzné typy zdrojù dat napø: __MySql__, __MS SQL Server__, XML dokumenty..
+* LINQ (__Language Integrated Query__) je jednotnÃ¡ syntaxe dotazÅ¯ v jazycÃ­ch C# a VB.NET pro zÃ­skÃ¡vÃ¡nÃ­ dat z rÅ¯znÃ½ch zdrojÅ¯ a formÃ¡tÅ¯
+* poskytuje jednotnÃ© dotazovacÃ­ rozhranÃ­ pro rÅ¯znÃ© typy zdrojÅ¯ dat napÅ™: __MySql__, __MS SQL Server__, XML dokumenty..
