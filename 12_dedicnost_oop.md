@@ -1,21 +1,20 @@
-# dìdiènost v OOP
-## dìdiènost
-* poskytuje monost vytvoøit tøídu s daty z ji existující tøídy
-* název tøíd:
-* `Odvozená tøída` (dítì) - tøída které dìdí z jiné tøídy
-* `Základní tøída` (rodiè) - tøída z které je dìdìno
-* pro dìdìní z tøídy pouijeme znak `:`
+# dÄ›diÄnost v OOP
+## dÄ›diÄnost
+* poskytuje moÅ¾nost vytvoÅ™it tÅ™Ã­du s daty z jiÅ¾ existujÃ­cÃ­ tÅ™Ã­dy
+* nÃ¡zev tÅ™Ã­d:
+* `OdvozenÃ¡ tÅ™Ã­da` (dÃ­tÄ›) - tÅ™Ã­da kterÃ¡ dÄ›dÃ­ z jinÃ© tÅ™Ã­dy
+* `ZÃ¡kladnÃ­ tÅ™Ã­da` (rodiÄ) - tÅ™Ã­da z kterÃ© je dÄ›dÄ›no
+* pro dÄ›dÄ›nÃ­ z tÅ™Ã­dy pouÅ¾ijeme znak `:`
 ## polymorfismus
-* znamená "mnoho podob" a vyskytuje se, kdy máme mnoho tøíd, které jsou navzájem propojeny dìdièností
-* vyuívá zdìdìné metody k provádìní rùznıch úloh, to umoòuje provádìt jednu akci rùznımi zpùsoby
-* 
-## pøekrıvání metod
-## abstraktní tøída
-* __abstrakce__ dat je proces skrytí urèitıch detailù a zobrazení pouze podstatnıch informací uivateli
-* __abstraktní tøída__ je omezená tøída, kterou nelze pouít k vytváøení objektù (pro pøístup k ní je nutné ji zdìdit z jiné tøídy)
-* __abstraktní metoda__ mùe bıt pouita jen v abstraktní tøídì.. metoda nemá tìlo, to je poskytováno odvozenou tøídou(z tøídy zdìdìné)
-## rozhraní
-* další monost dosaení __abstrakce__
-* rozhraní je kompletní "abstraktní tøída", která obsahuje pouze abstraktní metody (s prázdnımi tìly) a vlastnosti
-* rozhraní si mùeme pøedstavit jako __šablonu__
-* pro pouití funkcí se musí rozhraní implementovat jinou tøídou, pouívá se znak `:` (jako u dìdìní)
+* znamenÃ¡ "mnoho podob" a vyskytuje se, kdyÅ¾ mÃ¡me mnoho tÅ™Ã­d, kterÃ© jsou navzÃ¡jem propojeny dÄ›diÄnostÃ­
+* vyuÅ¾Ã­vÃ¡ zdÄ›dÄ›nÃ© metody k provÃ¡dÄ›nÃ­ rÅ¯znÃ½ch Ãºloh, to umoÅ¾Åˆuje provÃ¡dÄ›t jednu akci rÅ¯znÃ½mi zpÅ¯soby
+## pÅ™ekrÃ½vÃ¡nÃ­ metod
+## abstraktnÃ­ tÅ™Ã­da
+* __abstrakce__ dat je proces skrytÃ­ urÄitÃ½ch detailÅ¯ a zobrazenÃ­ pouze podstatnÃ½ch informacÃ­ uÅ¾ivateli
+* __abstraktnÃ­ tÅ™Ã­da__ je omezenÃ¡ tÅ™Ã­da, kterou nelze pouÅ¾Ã­t k vytvÃ¡Å™enÃ­ objektÅ¯ (pro pÅ™Ã­stup k nÃ­ je nutnÃ© ji zdÄ›dit z jinÃ© tÅ™Ã­dy)
+* __abstraktnÃ­ metoda__ mÅ¯Å¾e bÃ½t pouÅ¾ita jen v abstraktnÃ­ tÅ™Ã­dÄ›.. metoda nemÃ¡ tÄ›lo, to je poskytovÃ¡no odvozenou tÅ™Ã­dou(z tÅ™Ã­dy zdÄ›dÄ›nÃ©)
+## rozhranÃ­
+* dalÅ¡Ã­ moÅ¾nost dosaÅ¾enÃ­ __abstrakce__
+* rozhranÃ­ je kompletnÃ­ "abstraktnÃ­ tÅ™Ã­da", kterÃ¡ obsahuje pouze abstraktnÃ­ metody (s prÃ¡zdnÃ½mi tÄ›ly) a vlastnosti
+* rozhranÃ­ si mÅ¯Å¾eme pÅ™edstavit jako __Å¡ablonu__
+* pro pouÅ¾itÃ­ funkcÃ­ se musÃ­ rozhranÃ­ implementovat jinou tÅ™Ã­dou, pouÅ¾Ã­vÃ¡ se znak `:` (jako u dÄ›dÄ›nÃ­)
