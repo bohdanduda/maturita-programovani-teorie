@@ -1,35 +1,36 @@
-# základy OOP
-## tøída
-* datová struktura, která spojuje datové promìnné a funkce do jednoho celku
-* instancím tøíd se øíka objekty
-* tøída je pouze objektovı konstruktor, nebo "blueprint" pro vytvoøení objektu...
+# zÃ¡klady OOP
+## tÅ™Ã­da
+* datovÃ¡ struktura, kterÃ¡ spojuje datovÃ© promÄ›nnÃ© a funkce do jednoho celku
+* instancÃ­m tÅ™Ã­d se Å™Ã­ka objekty
+* tÅ™Ã­da je pouze objektovÃ½ konstruktor, nebo "blueprint" pro vytvoÅ™enÃ­ objektu...
 ## instance
-* promìnná libovolného typu obsaená ve tøídì nebo struktuøe
-* slouí k ukládání dat objektu
-* pole instancí pøedstavují data tøídy, která umoòují objektu udrovat jeho stav
+* promÄ›nnÃ¡ libovolnÃ©ho typu obsaÅ¾enÃ¡ ve tÅ™Ã­dÄ› nebo struktuÅ™e
+* slouÅ¾Ã­ k uklÃ¡dÃ¡nÃ­ dat objektu
+* pole instancÃ­ pÅ™edstavujÃ­ data tÅ™Ã­dy, kterÃ¡ umoÅ¾ÅˆujÃ­ objektu udrÅ¾ovat jeho stav
 ## vlastnosti
-* atributy, které charakterizují tøídy
-* vlastnosti se chovají jako pole, na rozdíl od polí jsou však implementovány pomocí __accessorù__ (definují pøíkazy provádìné pøi pøístupu, nebo pøiøezení vlastnosti)
+* atributy, kterÃ© charakterizujÃ­ tÅ™Ã­dy
+* vlastnosti se chovajÃ­ jako pole, na rozdÃ­l od polÃ­ jsou vÅ¡ak implementovÃ¡ny pomocÃ­ __accessorÅ¯__ (definujÃ­ pÅ™Ã­kazy provÃ¡dÄ›nÃ© pÅ™i pÅ™Ã­stupu, nebo pÅ™iÅ™ezenÃ­ vlastnosti)
 ## metody
-* metody jsou bloky kódù nebo pøíkazù v programu, které dávají uivateli monost opakovanì pouívat stejnı kód, co šetøí spotøebu pamìti, pùsobí jako úspora èasu a hlavnì zajišuje lepší èitelnost kódu
+* metody jsou bloky kÃ³dÅ¯ nebo pÅ™Ã­kazÅ¯ v programu, kterÃ© dÃ¡vajÃ­ uÅ¾ivateli moÅ¾nost opakovanÄ› pouÅ¾Ã­vat stejnÃ½ kÃ³d, coÅ¾ Å¡etÅ™Ã­ spotÅ™ebu pamÄ›ti, pÅ¯sobÃ­ jako Ãºspora Äasu a hlavnÄ› zajiÅ¡Å¥uje lepÅ¡Ã­ Äitelnost kÃ³du
 * syntnaxe deklarace metody:
 ```
 <Access_Modifier> <return_type> <method_name>([<param_list>])
      public	       void	   Vypocitej  (int x, int y)
 ```
-## zapouzdøení
-* zapouzdøení je definováno jako zabalení dat do jedné jednotky, je to mechanismus, kterı spojuje kód a data, s nimi manipuluje
-* pøi zapouzdøení jsou promìnné nebo data tøídy skryty pøed jakoukoli jinou tøídou a lze k nim pøistupovat pouze prostøednictvím nìkteré èlenské funkce vlastní tøídy, v ní jsou deklarovány
+## zapouzdÅ™enÃ­
+* zapouzdÅ™enÃ­ je definovÃ¡no jako zabalenÃ­ dat do jednÃ© jednotky, je to mechanismus, kterÃ½ spojuje kÃ³d a data, s nimiÅ¾ manipuluje
+* pÅ™i zapouzdÅ™enÃ­ jsou promÄ›nnÃ© nebo data tÅ™Ã­dy skryty pÅ™ed jakoukoli jinou tÅ™Ã­dou a lze k nim pÅ™istupovat pouze prostÅ™ednictvÃ­m nÄ›kterÃ© ÄlenskÃ© funkce vlastnÃ­ tÅ™Ã­dy, v nÃ­Å¾ jsou deklarovÃ¡ny
+* NapÅ™. kdyÅ¾ v konstruktoru provazujeme vlastnosti tÅ™Ã­dy s parametry konstruktoru, dÃ¡le uÅ¾ je nemÅ¯Å¾eme mÄ›nit, jen ÄÃ­st
 
 	https://www.geeksforgeeks.org/c-sharp-encapsulation/
-## modifikátory pøístupu
-* modifikátory pøístupu jsou klíèová slova pouívaná k urèení deklarované pøístupnosti èlena nebo typu
-* `public` - kód je pøístupnı pro všechny tøídy
-* `private` - kód je pøístupnı jen pro tøídu samotnou
-* `protected` - kód je pøístupnı jen pro tøídu samotnou, nebo pro tøídu která je dìdièná
-* `internal` - kód je pøístupnı pouze v rámci vlastní sestavy
+## modifikÃ¡tory pÅ™Ã­stupu
+* modifikÃ¡tory pÅ™Ã­stupu jsou klÃ­ÄovÃ¡ slova pouÅ¾Ã­vanÃ¡ k urÄenÃ­ deklarovanÃ© pÅ™Ã­stupnosti Älena nebo typu
+* `public` - kÃ³d je pÅ™Ã­stupnÃ½ pro vÅ¡echny tÅ™Ã­dy
+* `private` - kÃ³d je pÅ™Ã­stupnÃ½ jen pro tÅ™Ã­du samotnou
+* `protected` - kÃ³d je pÅ™Ã­stupnÃ½ jen pro tÅ™Ã­du samotnou, nebo pro tÅ™Ã­du kterÃ¡ je dÄ›diÄnÃ¡
+* `internal` - kÃ³d je pÅ™Ã­stupnÃ½ pouze v rÃ¡mci vlastnÃ­ sestavy
 ## konstruktor
-* metoda pouita k inicializaci objektù
-* nemá ádnı návratovı typ
-* mouhou pøijímat parametry, které jsou pouity k inicializaci polí
-* mıe bıt pøetíen
+* metoda pouÅ¾ita k inicializaci objektÅ¯
+* nemÃ¡ Å¾Ã¡dnÃ½ nÃ¡vratovÃ½ typ
+* mouhou pÅ™ijÃ­mat parametry, kterÃ© jsou pouÅ¾ity k inicializaci polÃ­
+* mÃ½Å¾e bÃ½t pÅ™etÃ­Å¾en
