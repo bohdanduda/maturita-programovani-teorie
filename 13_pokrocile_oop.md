@@ -4,7 +4,7 @@
 * Statická metoda uchovává pouze jednu kopii metody na úrovni typu, nikoli na úrovni objektu
 * Poslední aktualizováná hodnota metody je sdílena mezi všemi objekty daného typu - všechny instance třídy sdílejí přesnou kopii metody a její data
 * Statické metody se volají pomocí názvu třídy, nikoli instance třídy
-* Příklad statických metod: `Console.WriteLine()`, `Console.ReadKey()`. Tyto metody voláme přes jméno třídy Console, aniž bysme ji v kódu inicializovali* 
+* Příklad statických metod: `Console.WriteLine()`, `Console.ReadKey()`. Tyto metody voláme přes jméno třídy Console, aniž bysme ji v kódu inicializovali
 #### Vlastnosti
 * Statické proměnné mají stejnou hodnotu ve všech instancích objektu.. proto se používají k definování konstant.
 * Jejich hodnoty lze získat voláním třídy, aniž by bylo nutné vytvořit její instanci.
