@@ -1,6 +1,6 @@
 # základy OOP
 ## třída
-* datová struktura, která spojuje datové proměnné a funkce do jednoho celku
+* datová struktura, která spojuje datové proměnné a metody do jednoho celku
 * instancím tříd se říka objekty
 * třída je pouze objektový konstruktor, nebo "blueprint" pro vytvoření objektu...
 ## instance
