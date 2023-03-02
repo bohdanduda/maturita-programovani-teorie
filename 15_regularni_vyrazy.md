@@ -1,60 +1,62 @@
-# regulární vırazy
-* regulární vıraz je vzor, kterı se pouívá k analıze a kontrole, zda zadanı vstupní text odpovídá danému vzoru
-* .NET poskytuje engine, kterı takovéhle porovnávání umoòuje
-## Tøída Regex
-* Tøída Regex pøedstavuje engine regulárních vırazù.
-* Lze ji pouít k rychlému rozboru velkého mnoství textu za úèelem nalezení specifickıch vzorù znakù, k extrakci, úpravì, nahrazení nebo odstranìní textovıch podøetìzcù a k pøidání extrahovanıch øetìzcù do kolekce pro generování sestavy
-* Regex mùeme napøíklad vyuít pro validaci jestli je danı øetìec v Email formátu
-* Obsahuje nìkolik statickıch metod:
+# regulÃ¡rnÃ­ vÃ½razy
+* regulÃ¡rnÃ­ vÃ½raz je vzor, kterÃ½ se pouÅ¾Ã­vÃ¡ k analÃ½ze a kontrole, zda zadanÃ½ vstupnÃ­ text odpovÃ­dÃ¡ danÃ©mu vzoru
+* .NET poskytuje engine, kterÃ½ takovÃ©hle porovnÃ¡vÃ¡nÃ­ umoÅ¾Åˆuje
+## TÅ™Ã­da Regex
+* TÅ™Ã­da Regex pÅ™edstavuje engine regulÃ¡rnÃ­ch vÃ½razÅ¯.
+* Lze ji pouÅ¾Ã­t k rychlÃ©mu rozboru velkÃ©ho mnoÅ¾stvÃ­ textu za ÃºÄelem nalezenÃ­ specifickÃ½ch vzorÅ¯ znakÅ¯, k extrakci, ÃºpravÄ›, nahrazenÃ­ nebo odstranÄ›nÃ­ textovÃ½ch podÅ™etÄ›zcÅ¯ a k pÅ™idÃ¡nÃ­ extrahovanÃ½ch Å™etÄ›zcÅ¯ do kolekce pro generovÃ¡nÃ­ sestavy
+* Regex mÅ¯Å¾eme napÅ™Ã­klad vyuÅ¾Ã­t pro validaci jestli je danÃ½ Å™etÄ›Å¾ec v Email formÃ¡tu
+* Obsahuje nÄ›kolik statickÃ½ch metod:
 
 * `Escape` - Escapes regex metacharacters within a string
 * `Unescape`- Unescapes any escaped characters within a string
-* `IsMatch` - Vrací boolean pokud se zadanı vıraz shoduje s øetìzcem
-* `Match` - Metoda vrací __Match__ instanci
-* `Matches` - Metoda vrací list __Match__ instanci jako kolekci
-* `Replace` - Metoda nahradí vyhledávanı øetìzec za øetìzec zvolenı
-* `Split` - Metoda vrací pole øetìzcù urèené vırazem
-## Vıznamy jednotlivıch znakù
-* `\` - Oznaèí následující znak jako speciální znak nebo escapuje literál
-* `^` - V závislosti na tom, zda je nastavena monost MultiLine, odpovídá pozici pøed prvním znakem v øádku nebo prvnímu znaku v øetìzci
-* `$` - V závislosti na tom, zda je nastavena monost MultiLine, odpovídá pozici za posledním znakem v øádku nebo poslednímu znaku v øetìzci
-* `*` - Shoduje se s pøedchozím znakem nulakrát nebo vícekrát. Napøíklad `zo*` odpovídá buï "z", nebo "zoo"
-* `+` - Shoduje se s pøedchozím znakem jedenkrát nebo vícekrát. Napøíklad `zo+` odpovídá "zoo", ale ne "z"
-* `?` - Shoduje se s pøedchozím znakem nulakrát nebo jednou. Napøíklad `a?ve?` odpovídá znaku "ve" ve slovì "never" 
-* `.` - Shoduje se s libovolnım jednotlivım znakem kromì znaku nového øádku
-* `(pattern)` - Shoduje se se vzorem a zapamatuje si shodu. Shodnı podøetìzec lze naèíst z vısledné kolekce Matches pomocí poloky [0]...[n]
-* `(?<name>pattern)` - Shoduje se se vzorem a dává shodì jméno
-* `(?:pattern)` - Skupina, která nezachycuje
+* `IsMatch` - VracÃ­ boolean pokud se zadanÃ½ vÃ½raz shoduje s Å™etÄ›zcem
+* `Match` - Metoda vracÃ­ __Match__ instanci
+* `Matches` - Metoda vracÃ­ list __Match__ instanci jako kolekci
+* `Replace` - Metoda nahradÃ­ vyhledÃ¡vanÃ½ Å™etÄ›zec za Å™etÄ›zec zvolenÃ½
+* `Split` - Metoda vracÃ­ pole Å™etÄ›zcÅ¯ urÄenÃ© vÃ½razem
+
+* Implementace tÅ™Ã­dy __Regex__ `Regex regex = new Regex("Test");`
+## VÃ½znamy jednotlivÃ½ch znakÅ¯
+* `\` - OznaÄÃ­ nÃ¡sledujÃ­cÃ­ znak jako speciÃ¡lnÃ­ znak nebo escapuje literÃ¡l
+* `^` - V zÃ¡vislosti na tom, zda je nastavena moÅ¾nost MultiLine, odpovÃ­dÃ¡ pozici pÅ™ed prvnÃ­m znakem v Å™Ã¡dku nebo prvnÃ­mu znaku v Å™etÄ›zci
+* `$` - V zÃ¡vislosti na tom, zda je nastavena moÅ¾nost MultiLine, odpovÃ­dÃ¡ pozici za poslednÃ­m znakem v Å™Ã¡dku nebo poslednÃ­mu znaku v Å™etÄ›zci
+* `*` - Shoduje se s pÅ™edchozÃ­m znakem nulakrÃ¡t nebo vÃ­cekrÃ¡t. NapÅ™Ã­klad `zo*` odpovÃ­dÃ¡ buÄ "z", nebo "zoo"
+* `+` - Shoduje se s pÅ™edchozÃ­m znakem jedenkrÃ¡t nebo vÃ­cekrÃ¡t. NapÅ™Ã­klad `zo+` odpovÃ­dÃ¡ "zoo", ale ne "z"
+* `?` - Shoduje se s pÅ™edchozÃ­m znakem nulakrÃ¡t nebo jednou. NapÅ™Ã­klad `a?ve?` odpovÃ­dÃ¡ znaku "ve" ve slovÄ› "never" 
+* `.` - Shoduje se s libovolnÃ½m jednotlivÃ½m znakem kromÄ› znaku novÃ©ho Å™Ã¡dku
+* `(pattern)` - Shoduje se se vzorem a zapamatuje si shodu. ShodnÃ½ podÅ™etÄ›zec lze naÄÃ­st z vÃ½slednÃ© kolekce Matches pomocÃ­ poloÅ¾ky [0]...[n]
+* `(?<name>pattern)` - Shoduje se se vzorem a dÃ¡vÃ¡ shodÄ› jmÃ©no
+* `(?:pattern)` - Skupina, kterÃ¡ nezachycuje
 * `(?=...)` - Positive lookahead
 * `(?!...)` - Negative lookahead
 * `(?<=...)` - Positive lookbehind
 * `(?<!...)` - Negative lookbehind
-* `x|y` - Shoduje se s x nebo y. Napøíklad `z|wood` se shoduje s "z" nebo "wood". `(z|w)oo` odpovídá "zoo" nebo "wood"
-* `{n}` - n je nezáporné celé èíslo. Shoduje se pøesnì n-krát. Napøíklad `o{2}` neodpovídá písmenu "o" ve slovì "Bob", ale odpovídá prvním dvìma písmenùm "o" ve slovì "foooood"
-* `{n,}` -  Shoduje se alespoò n-krát. Napøíklad `o{2,}` se neshoduje s "o" ve slovì "Bob", ale shoduje se se všemi "o" ve slovì "foooood". `o{1,}` je ekvivalentní `o+`. `o{0,}` je ekvivalentní `o*`
-* `{n,m}` - m a n jsou nezáporná celá èísla. Shoduje se nejménì nkrát a nejvıše mkrát. Napøíklad `o{1,3}` odpovídá prvním tøem o ve slovì "fooooood". `o{0,1}` je ekvivalentní `o?`
-* `[xyz]` - Znaková sada. Shoduje se s libovolnım z pøiloenıch znakù. Napøíklad `[abc]` odpovídá znaku "a" ve slovì "plain"
-* `[^xyz]` - Sada zápornıch znakù. Shoduje se s jakımkoli neuzavøenım znakem. Napøíklad `[^abc]` odpovídá znaku "p" ve slovì "plain"
-* `[a-z]` - Rozsah znakù. Shoduje se s libovolnım znakem v zadaném rozsahu. Napøíklad `[a-z]` odpovídá libovolnému znaku malé abecedy v rozsahu "a" a "z"
-* `[^m-z]` - Negativní rozsah znakù. Shoduje se s libovolnım znakem, kterı není v zadaném rozsahu. Napøíklad `[^m-z]` odpovídá libovolnému znaku malé abecedy kterı není v rozsahu "m" a "z"
-* `\b` - Shoduje se s hranicí slova, tj. pozici mezi slovem a mezerou. Napøíklad `er\b` odpovídá "er" ve slovì "never", ale ne "er" ve slovì "verb"
-* `\B` - Shoduje se s neslovní hranicí. `ea*r\B` odpovídá "ear" ve slovì "never early"
-* `\d` - Shoduje se s èíselnımi charaktery. Ekvivalentní `[0-9]`
-* `\D` - Shoduje se s jinım ne èíselnım znakem. Ekvivalentní `[^0-9]`
-* `\f` - Shoduje se s formuláøovım znakem
-* `\k` - Zpìtnı odkaz na pojmenovanou skupinu
-* `\n` - Shoduje se se znakem nového øádku
+* `x|y` - Shoduje se s x nebo y. NapÅ™Ã­klad `z|wood` se shoduje s "z" nebo "wood". `(z|w)oo` odpovÃ­dÃ¡ "zoo" nebo "wood"
+* `{n}` - n je nezÃ¡pornÃ© celÃ© ÄÃ­slo. Shoduje se pÅ™esnÄ› n-krÃ¡t. NapÅ™Ã­klad `o{2}` neodpovÃ­dÃ¡ pÃ­smenu "o" ve slovÄ› "Bob", ale odpovÃ­dÃ¡ prvnÃ­m dvÄ›ma pÃ­smenÅ¯m "o" ve slovÄ› "foooood"
+* `{n,}` -  Shoduje se alespoÅˆ n-krÃ¡t. NapÅ™Ã­klad `o{2,}` se neshoduje s "o" ve slovÄ› "Bob", ale shoduje se se vÅ¡emi "o" ve slovÄ› "foooood". `o{1,}` je ekvivalentnÃ­ `o+`. `o{0,}` je ekvivalentnÃ­ `o*`
+* `{n,m}` - m a n jsou nezÃ¡pornÃ¡ celÃ¡ ÄÃ­sla. Shoduje se nejmÃ©nÄ› nkrÃ¡t a nejvÃ½Å¡e mkrÃ¡t. NapÅ™Ã­klad `o{1,3}` odpovÃ­dÃ¡ prvnÃ­m tÅ™em o ve slovÄ› "fooooood". `o{0,1}` je ekvivalentnÃ­ `o?`
+* `[xyz]` - ZnakovÃ¡ sada. Shoduje se s libovolnÃ½m z pÅ™iloÅ¾enÃ½ch znakÅ¯. NapÅ™Ã­klad `[abc]` odpovÃ­dÃ¡ znaku "a" ve slovÄ› "plain"
+* `[^xyz]` - Sada zÃ¡pornÃ½ch znakÅ¯. Shoduje se s jakÃ½mkoli neuzavÅ™enÃ½m znakem. NapÅ™Ã­klad `[^abc]` odpovÃ­dÃ¡ znaku "p" ve slovÄ› "plain"
+* `[a-z]` - Rozsah znakÅ¯. Shoduje se s libovolnÃ½m znakem v zadanÃ©m rozsahu. NapÅ™Ã­klad `[a-z]` odpovÃ­dÃ¡ libovolnÃ©mu znaku malÃ© abecedy v rozsahu "a" aÅ¾ "z"
+* `[^m-z]` - NegativnÃ­ rozsah znakÅ¯. Shoduje se s libovolnÃ½m znakem, kterÃ½ nenÃ­ v zadanÃ©m rozsahu. NapÅ™Ã­klad `[^m-z]` odpovÃ­dÃ¡ libovolnÃ©mu znaku malÃ© abecedy kterÃ½ nenÃ­ v rozsahu "m" aÅ¾ "z"
+* `\b` - Shoduje se s hranicÃ­ slova, tj. pozici mezi slovem a mezerou. NapÅ™Ã­klad `er\b` odpovÃ­dÃ¡ "er" ve slovÄ› "never", ale ne "er" ve slovÄ› "verb"
+* `\B` - Shoduje se s neslovnÃ­ hranicÃ­. `ea*r\B` odpovÃ­dÃ¡ "ear" ve slovÄ› "never early"
+* `\d` - Shoduje se s ÄÃ­selnÃ½mi charaktery. EkvivalentnÃ­ `[0-9]`
+* `\D` - Shoduje se s jinÃ½m neÅ¾ ÄÃ­selnÃ½m znakem. EkvivalentnÃ­ `[^0-9]`
+* `\f` - Shoduje se s formulÃ¡Å™ovÃ½m znakem
+* `\k` - ZpÄ›tnÃ½ odkaz na pojmenovanou skupinu
+* `\n` - Shoduje se se znakem novÃ©ho Å™Ã¡dku
 * `\r` - Matches a carriage return character
-* `\s` - Shoduje se s jakımkoli white-space vèetnì mezery, tabulátoru, posuvníku atd. Ekvivalent: `[ \f\n\r\t\v]`
-* `\S` - Shoduje se s jakımkoli znakem, kterı není white-space. Ekvivalent: `[^ \f\n\r\t\v]` 
-* `\t` - Shoduje se s charakterem tabulátoru
-* `\v` - Odpovídá znaku svislého tabulátoru
-* `\w` - Shoduje se s libovolnım znakem slova vèetnì podtrítka. Ekvivalent `[A-Za-z0-9_]`
-* `\W` - Shoduje se s libovolnım neslovním znakem. Ekvivalent `[^A-Za-z0-9_]` 
-* `\num` - Odpovídá num, kde num je celé kladné èíslo. Napøíklad `(.)\1` odpovídá dvìma po sobì jdoucím stejnım znakùm
-* `\A` - Shoduje se s pozicí pøed prvním znakem v øetìzci. Není ovlivnìno nastavením MultiLine
-* `\Z` - Shoduje se s pozicí za posledním znakem øetìzce. Není ovlivnìno nastavením MultiLine
-* `\G` - Urèuje, e shody musí bıt po sobì jdoucí, bez jakıchkoli neshodnıch znakù
+* `\s` - Shoduje se s jakÃ½mkoli white-space vÄetnÄ› mezery, tabulÃ¡toru, posuvnÃ­ku atd. Ekvivalent: `[ \f\n\r\t\v]`
+* `\S` - Shoduje se s jakÃ½mkoli znakem, kterÃ½ nenÃ­ white-space. Ekvivalent: `[^ \f\n\r\t\v]` 
+* `\t` - Shoduje se s charakterem tabulÃ¡toru
+* `\v` - OdpovÃ­dÃ¡ znaku svislÃ©ho tabulÃ¡toru
+* `\w` - Shoduje se s libovolnÃ½m znakem slova vÄetnÄ› podtrÅ¾Ã­tka. Ekvivalent `[A-Za-z0-9_]`
+* `\W` - Shoduje se s libovolnÃ½m neslovnÃ­m znakem. Ekvivalent `[^A-Za-z0-9_]` 
+* `\num` - OdpovÃ­dÃ¡ num, kde num je celÃ© kladnÃ© ÄÃ­slo. NapÅ™Ã­klad `(.)\1` odpovÃ­dÃ¡ dvÄ›ma po sobÄ› jdoucÃ­m stejnÃ½m znakÅ¯m
+* `\A` - Shoduje se s pozicÃ­ pÅ™ed prvnÃ­m znakem v Å™etÄ›zci. NenÃ­ ovlivnÄ›no nastavenÃ­m MultiLine
+* `\Z` - Shoduje se s pozicÃ­ za poslednÃ­m znakem Å™etÄ›zce. NenÃ­ ovlivnÄ›no nastavenÃ­m MultiLine
+* `\G` - UrÄuje, Å¾e shody musÃ­ bÃ½t po sobÄ› jdoucÃ­, bez jakÃ½chkoli neshodnÃ½ch znakÅ¯
 
 
 * _\n_ 	Matches n, where n is an octal escape value. Octal escape values must be 1, 2, or 3 digits long. For example, "\11" and "\011" both match a tab character. "\0011" is the equivalent of "\001" & "1". Octal escape values must not exceed 256. If they do, only the first two digits comprise the expression. Allows ASCII codes to be used in regular expressions.
