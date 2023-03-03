@@ -15,7 +15,8 @@
 * `Replace` - Metoda nahradí vyhledávaný řetězec za řetězec zvolený
 * `Split` - Metoda vrací pole řetězců určené výrazem
 
-* Implementace třídy __Regex__ `Regex regex = new Regex("Test");`
+* Implementace třídy __Regex__ pro, který hledá pouze textové znaky (malá i velká písmena): `Regex regex = new Regex("[A-Za-z]");`
+* Regex pro kontrolu telefonního čísla: `Regex regex = new Regex("(\\+\\d{1,3}.?)\\d{3}.?\\d{3}.?\\d{3}");`
 ## Významy jednotlivých znaků
 * `\` - Označí následující znak jako speciální znak nebo escapuje literál
 * `^` - V závislosti na tom, zda je nastavena možnost MultiLine, odpovídá pozici před prvním znakem v řádku nebo prvnímu znaku v řetězci
