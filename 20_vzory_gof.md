@@ -11,6 +11,7 @@ __Třída, jejíž instance může existovat pouze jedna__
 * Singleton je návrhový vzor, který umožňuje zajistit, aby třída měla pouze jednu instanci, a zároveň poskytuje globální přístupový bod k této instanci
 * Tím ale porušuje pravidlo: Single Responsibility Principle
 * Využijeme třeba v případě kdy chceme mít jednu instanci dostopnou všem klientům: databázový objekt, sdílený různými částmi programu
+* Třída nemá parametry
 ## Příkaz (Command)
 __Zapouzdření požadavku na příkaz jako objektu__
 * Návrhový vzor Command je návrhový __vzor chování__, který z požadavku vytvoří samostatný objekt obsahující všechny informace o požadavku.
