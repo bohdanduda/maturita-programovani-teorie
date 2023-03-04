@@ -1,38 +1,38 @@
-# navrhované vzory gof
-* Návrhové vzory poskytují reálná øešení bìnıch problémù s návrhem softwaru, které se vyskytují pøi práci s malımi nebo podnikovımi aplikacemi
-* GoF - gang of four (Ètyøi autoøi této funkce)
-* Návrhové vzory poskytují zobecnìné øešení ve formì šablon, které lze aplikovat na reálné problémy a efektivnì je øešit
-## Tovární metoda (Factory Method)
-__Vytvoøí instanci nìkolika odvozenıch tøíd__
-* Tovární metoda je návrhovı vzor, kterı poskytuje rozhraní pro vytváøení objektù v nadtøídì, ale umoòuje podtøídám mìnit typ objektù, které budou vytvoøeny.
-* Vzor Tovární metoda navrhuje nahradit pøímé volání konstrukce objektu (pomocí operátoru new) voláním speciální tovární metody
-## Jedináèek (Singleton)
-__Tøída, její instance mùe existovat pouze jedna__
-* Singleton je návrhovı vzor, kterı umoòuje zajistit, aby tøída mìla pouze jednu instanci, a zároveò poskytuje globální pøístupovı bod k této instanci
-* Tím ale porušuje pravidlo: Single Responsibility Principle
-* Vyuijeme tøeba v pøípadì kdy chceme mít jednu instanci dostopnou všem klientùm: databázovı objekt, sdílenı rùznımi èástmi programu
-## Pøíkaz (Command)
-__Zapouzdøení poadavku na pøíkaz jako objektu__
-* Návrhovı vzor Command je návrhovı __vzor chování__, kterı z poadavku vytvoøí samostatnı objekt obsahující všechny informace o poadavku.
-* To umoòuje napø. parametrizovat klienty s rùznımi poadavky, øadit poadavky do fronty nebo je zaznamenávat a podporovat operace, které lze zrušit
+# nÃ¡vrhovÃ© vzory gof
+* NÃ¡vrhovÃ© vzory poskytujÃ­ reÃ¡lnÃ¡ Å™eÅ¡enÃ­ bÄ›Å¾nÃ½ch problÃ©mÅ¯ s nÃ¡vrhem softwaru, kterÃ© se vyskytujÃ­ pÅ™i prÃ¡ci s malÃ½mi nebo podnikovÃ½mi aplikacemi
+* GoF - gang of four (ÄŒtyÅ™i autoÅ™i tÃ©to funkce)
+* NÃ¡vrhovÃ© vzory poskytujÃ­ zobecnÄ›nÃ© Å™eÅ¡enÃ­ ve formÄ› Å¡ablon, kterÃ© lze aplikovat na reÃ¡lnÃ© problÃ©my a efektivnÄ› je Å™eÅ¡it
+## TovÃ¡rnÃ­ metoda (Factory Method)
+__VytvoÅ™Ã­ instanci nÄ›kolika odvozenÃ½ch tÅ™Ã­d__
+* TovÃ¡rnÃ­ metoda je nÃ¡vrhovÃ½ vzor, kterÃ½ poskytuje rozhranÃ­ pro vytvÃ¡Å™enÃ­ objektÅ¯ v nadtÅ™Ã­dÄ›, ale umoÅ¾Åˆuje podtÅ™Ã­dÃ¡m mÄ›nit typ objektÅ¯, kterÃ© budou vytvoÅ™eny.
+* Vzor TovÃ¡rnÃ­ metoda navrhuje nahradit pÅ™Ã­mÃ© volÃ¡nÃ­ konstrukce objektu (pomocÃ­ operÃ¡toru new) volÃ¡nÃ­m speciÃ¡lnÃ­ tovÃ¡rnÃ­ metody
+## JedinÃ¡Äek (Singleton)
+__TÅ™Ã­da, jejÃ­Å¾ instance mÅ¯Å¾e existovat pouze jedna__
+* Singleton je nÃ¡vrhovÃ½ vzor, kterÃ½ umoÅ¾Åˆuje zajistit, aby tÅ™Ã­da mÄ›la pouze jednu instanci, a zÃ¡roveÅˆ poskytuje globÃ¡lnÃ­ pÅ™Ã­stupovÃ½ bod k tÃ©to instanci
+* TÃ­m ale poruÅ¡uje pravidlo: Single Responsibility Principle
+* VyuÅ¾ijeme tÅ™eba v pÅ™Ã­padÄ› kdy chceme mÃ­t jednu instanci dostopnou vÅ¡em klientÅ¯m: databÃ¡zovÃ½ objekt, sdÃ­lenÃ½ rÅ¯znÃ½mi ÄÃ¡stmi programu
+## PÅ™Ã­kaz (Command)
+__ZapouzdÅ™enÃ­ poÅ¾adavku na pÅ™Ã­kaz jako objektu__
+* NÃ¡vrhovÃ½ vzor Command je nÃ¡vrhovÃ½ __vzor chovÃ¡nÃ­__, kterÃ½ z poÅ¾adavku vytvoÅ™Ã­ samostatnÃ½ objekt obsahujÃ­cÃ­ vÅ¡echny informace o poÅ¾adavku.
+* To umoÅ¾Åˆuje napÅ™. parametrizovat klienty s rÅ¯znÃ½mi poÅ¾adavky, Å™adit poÅ¾adavky do fronty nebo je zaznamenÃ¡vat a podporovat operace, kterÃ© lze zruÅ¡it
 ## Pozorovatel (Observer)
- __Zpùsob oznamování zmìn v øadì tøíd__
-* Observer je návrhovı vzor chování, kterı umoòuje definovat mechanismus odbìru pro upozornìní více objektù na všechny události, které se stanou s objektem, kterı pozorují
+ __ZpÅ¯sob oznamovÃ¡nÃ­ zmÄ›n v Å™adÄ› tÅ™Ã­d__
+* Observer je nÃ¡vrhovÃ½ vzor chovÃ¡nÃ­, kterÃ½ umoÅ¾Åˆuje definovat mechanismus odbÄ›ru pro upozornÄ›nÃ­ vÃ­ce objektÅ¯ na vÅ¡echny udÃ¡losti, kterÃ© se stanou s objektem, kterÃ½ pozorujÃ­
 ## Iterator
-__Postupnı pøístup k prvkùm kolekce__
-Iterátor je návrhovı vzor chování, kterı umoòuje procházet prvky kolekce, ani by byla odhalena její základní reprezentace (seznam, zásobník, strom atd.)
+__PostupnÃ½ pÅ™Ã­stup k prvkÅ¯m kolekce__
+IterÃ¡tor je nÃ¡vrhovÃ½ vzor chovÃ¡nÃ­, kterÃ½ umoÅ¾Åˆuje prochÃ¡zet prvky kolekce, aniÅ¾ by byla odhalena jejÃ­ zÃ¡kladnÃ­ reprezentace (seznam, zÃ¡sobnÃ­k, strom atd.)
 ## State
-__Zmìna chování objektu pøi zmìnì jeho stavu__
-* Stav je návrhovı vzor chování, kterı umoòuje objektu zmìnit své chování, kdy se zmìní jeho vnitøní stav. Vypadá to, jako by objekt zmìnil svou tøídu.
+__ZmÄ›na chovÃ¡nÃ­ objektu pÅ™i zmÄ›nÄ› jeho stavu__
+* Stav je nÃ¡vrhovÃ½ vzor chovÃ¡nÃ­, kterÃ½ umoÅ¾Åˆuje objektu zmÄ›nit svÃ© chovÃ¡nÃ­, kdyÅ¾ se zmÄ›nÃ­ jeho vnitÅ™nÃ­ stav. VypadÃ¡ to, jako by objekt zmÄ›nil svou tÅ™Ã­du.
 ## Decorator
-__Dynamické pøidávání odpovìdností k objektùm__
-* Dekorátor je strukturální návrhovı vzor, kterı umoòuje pøipojit k objektùm nové chování umístìním tìchto objektù do speciálních obalovıch objektù, které obsahují chování.
+__DynamickÃ© pÅ™idÃ¡vÃ¡nÃ­ odpovÄ›dnostÃ­ k objektÅ¯m__
+* DekorÃ¡tor je strukturÃ¡lnÃ­ nÃ¡vrhovÃ½ vzor, kterÃ½ umoÅ¾Åˆuje pÅ™ipojit k objektÅ¯m novÃ© chovÃ¡nÃ­ umÃ­stÄ›nÃ­m tÄ›chto objektÅ¯ do speciÃ¡lnÃ­ch obalovÃ½ch objektÅ¯, kterÃ© obsahujÃ­ chovÃ¡nÃ­.
 ## Memento
-__Zachycení a obnovení vnitøního stavu objektu__
-* Memento je návrhovı vzor chování, kterı umoòuje uloit a obnovit pøedchozí stav objektu, ani by byly odhaleny podrobnosti jeho implementace
+__ZachycenÃ­ a obnovenÃ­ vnitÅ™nÃ­ho stavu objektu__
+* Memento je nÃ¡vrhovÃ½ vzor chovÃ¡nÃ­, kterÃ½ umoÅ¾Åˆuje uloÅ¾it a obnovit pÅ™edchozÃ­ stav objektu, aniÅ¾ by byly odhaleny podrobnosti jeho implementace
 ## Adapter
-__Shoda rozhraní rùznıch tøíd__
-* Adaptér je konstrukèní vzor, kterı pøevádí rùzdné typy rozhraní na jiné, podle oèekávání. Tento návrhovı vzor umoòuje spolupráci tøíd, které by jinak nemohly fungovat kvùli nekompatibilním rozhraním
+__Shoda rozhranÃ­ rÅ¯znÃ½ch tÅ™Ã­d__
+* AdaptÃ©r je konstrukÄnÃ­ vzor, kterÃ½ pÅ™evÃ¡dÃ­ rÅ¯zdnÃ© typy rozhranÃ­ na jinÃ©, podle oÄekÃ¡vÃ¡nÃ­. Tento nÃ¡vrhovÃ½ vzor umoÅ¾Åˆuje spoluprÃ¡ci tÅ™Ã­d, kterÃ© by jinak nemohly fungovat kvÅ¯li nekompatibilnÃ­m rozhranÃ­m
 
 ### https://refactoring.guru/design-patterns
 ### https://www.dofactory.com/net/design-patterns
