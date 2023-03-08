@@ -1,6 +1,6 @@
 # databáze
 ## Připojení k MySQL/MSSQL
-* Pro připojení musíme stáhnout balíček NuGet
+* pro práci s databází potřebujeme NuGet MySql.EntityFrameworkCore
 * Poté ještě vytvořit připojovací řetězec
 ```
 "ConnectionStrings": 
@@ -24,4 +24,4 @@ __Most mezi Entity Framework a databází__
 * Myšlenkou je oddělit vrstvu pro přístup k datům od vrstvy pro obchodní přístup k aplikaci, takže operace (jako je přidávání, aktualizace, mazání a výběr položek z kolekce) se provádějí pomocí jednoduchých metod, aniž by se řešily problémy s databází (jako jsou připojení, příkazy atd.)
 ## LinQ
 * LINQ (__Language Integrated Query__) je jednotná syntaxe dotazů v jazycích C# a VB.NET pro získávání dat z různých zdrojů a formátů
-* poskytuje jednotné dotazovací rozhraní pro různé typy zdrojů dat např: __MySql__, __MS SQL Server__, XML dokumenty..
+* poskytuje jednotné dotazovací rozhraní pro různé typy zdrojů dat např: __MySql__, __MS SQL Server__, XML dokumenty...
