@@ -9,6 +9,32 @@
 ## polymorfismus
 * znamená "mnoho podob" a vyskytuje se, když máme mnoho tříd, které jsou navzájem propojeny dědičností
 * využívá zděděné metody k provádění různých úloh, to umožňuje provádět jednu akci různými způsoby
+* Příklad polymorfismu:
+```
+class Animal  // Base class (parent) 
+{
+  public void animalSound() 
+  {
+    Console.WriteLine("The animal makes a sound");
+  }
+}
+
+class Pig : Animal  // Derived class (child) 
+{
+  public void animalSound() 
+  {
+    Console.WriteLine("The pig says: wee wee");
+  }
+}
+
+class Dog : Animal  // Derived class (child) 
+{
+  public void animalSound() 
+  {
+    Console.WriteLine("The dog says: bow wow");
+  }
+}
+```
 ## překrývání metod
 * Existuj 2 typy překrývání metod: __Přetěžování__ a __Přepisování__
 
