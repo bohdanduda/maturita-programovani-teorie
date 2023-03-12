@@ -1,6 +1,6 @@
 # GDI grafika
 * nejčastěji kreslíme na PictureBox
-* kreslení můžeme zpouštětt 2mi způsoby -
+* kreslení můžeme spouštět 2mi způsoby -
 1. událost Paint,
 2. vyrobíme objekt Graphics v jakymkoli objektu ve formsech
 * Objekt graphics: __Draw__ - pero, __Fill__ - štětec
@@ -26,6 +26,17 @@
 * Vlastní pero, nebo štětec si můžeme vyrobit.. Instancujeme jí jako třídu. Nastavíme barvu a tloušťku
 ## objekt Graphics
 ## událost Paint
+* Událost Paint se spustí na začátku kompilace, nakreslí na pictureBox zadanou kresbu, nebo tvar
+* Příklad nakreslení čtverce v počátečním bodě, o velikosti 100x100 pixelů:
+```
+private void pictureBox1_Paint(object sender, PaintEventArgs e)
+{
+    Graphics graphics = e.Graphics;
+
+    Pen pen = new Pen(Brushes.Blue);
+    graphics.DrawEllipse(pen, 0, 0, 100, 100);
+}
+```
 ## kreslení obrázků
 * Provádíme pomocí `graphics.DrawImage()`
 * Instance: `graphics.DrawImage(new Bitmap("Cesta obrázku"), 100, 100);` - můžeme definovat i šířku a výšku
