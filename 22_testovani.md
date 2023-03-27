@@ -1,8 +1,8 @@
-#Teorie testování
-##typy testů
-##blackbox/whitebox
-##test UI
-##usability testy
-##testy výkonu
-##profiler
-##Test Driven Development
+# Teorie testování
+## Typy testů
+## Blackbox/whitebox
+## Test UI
+## Usability testy
+## Testy výkonu
+## Profiler
+## Test Driven Development
