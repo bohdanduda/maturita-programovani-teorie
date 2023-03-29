@@ -43,15 +43,15 @@
 
 21.  [Databáze](21_databaze.md) - připojení k MySQL/MSSQL, ORM - entity framework, mapování tabulek, vazby, DbContext, DbSet, repository, LINQ
 
-22. Teorie testování - typy testů, blackbox/whitebox, test UI, usability testy, testy výkonu, profiler, Test Driven Development
+22. [Teorie testování](22_testovani-teorie.md) - typy testů, blackbox/whitebox, test UI, usability testy, testy výkonu, profiler, Test Driven Development
 
-23. Unit testy - princip a využití unit testů, testovací třídy, testovací metody, pre-testové a post-testové rutiny, testování formulářů
+23. [Unit testy](23_unit_testy.md) - princip a využití unit testů, testovací třídy, testovací metody, pre-testové a post-testové rutiny, testování formulářů
 
-24. Integrační testy - význam integračních testů, zásady nahraditelnosti, mock objekt
+24. [Integrační testy](24_integracni_testy.md) - význam integračních testů, zásady nahraditelnosti, mock objekt
 
-25. ASP.NET MVC základy - princip architektury Model-View-Controller, zpracování požadavku, směrování, výchozí směrování, HTTP protokol, controller, akce, parametry akce, návratový typ (ActionResult - View, Redirect)
+25. [ASP.NET MVC základy](25_asp_zaklady.md) - princip architektury Model-View-Controller, zpracování požadavku, směrování, výchozí směrování, HTTP protokol, controller, akce, parametry akce, návratový typ (ActionResult - View, Redirect)
 
-26. ASP.NET MVC View - princip tvorby dynamického view, Razor engine, layout, základní konstrukce ve View (výpis proměnné, cyklus, podmínka), tvorba odkazů, template, partial view, ViewComponents, předávání dat do view - (Model, ViewData, ViewBag)
+26. [ASP.NET MVC View](26_asp_view.md) - princip tvorby dynamického view, Razor engine, layout, základní konstrukce ve View (výpis proměnné, cyklus, podmínka), tvorba odkazů, template, partial view, ViewComponents, předávání dat do view - (Model, ViewData, ViewBag)
 
 27. ASP.NET MVC formuláře - definice a generování formuláře, formulářové prvky (label, textbox, checkbox,...), zpracování formuláře, validace hodnot, session
 
