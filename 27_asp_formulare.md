@@ -10,3 +10,5 @@
 * prostor na serveru, do kterého si klient může schovat data
 * Sessioně můžeme přidat identifikátor
 * V controlleru s ní pracujeme pomocí ``HttpContext.Session``
+* Session můžeme naplnit pouze stringem.
+* Když potřebujeme pracovat s jinými daty, tak použijeme Json k serializaci dat.
