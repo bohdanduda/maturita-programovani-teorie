@@ -11,6 +11,8 @@
 * Částečné zobrazení, pomocí funkce RenderPartial můžeme zobrazit jiné view, které funkci předáme
 * Popužití: Když máme část stránky, která se opakuje
 ## ViewComponents
+* Aby třída byla komponentou, musí dědit ze třidy __ViewComponent__
+* poté se chová v podstatě jako controller
 ## předávání dat do view - (Model, ViewData, ViewBag)
 * ViewBag - můžeme si v něm definovat jakoukoli vlastost, kterou si poté vyzvedneme ve View
 * ViewData - stejné jako ViewBag, funguje jako dictionary
