@@ -12,6 +12,20 @@ __Třída, jejíž instance může existovat pouze jedna__
 * Tím ale porušuje pravidlo: Single Responsibility Principle
 * Využijeme třeba v případě kdy chceme mít jednu instanci dostopnou všem klientům: databázový objekt, sdílený různými částmi programu
 * Třída nemá parametry
+* Implementace __Singletonu__:
+```
+private static readonly Singleton _instance = new();
+        
+public static Singleton GetSingletonInstance()
+{
+    return _instance;
+}
+```
+* Vytvoříme privátnní statickou readonly instanci třídy, kterou rovnou inicializujeme
+* Poté implemetujeme veřejnou statickou metodu, která vrací danou instanci
+* Instance se nikdy nepřepíše, od startu programu do konce, bude obsahovat instanci třídy Singleton
+* Pro přístup k instanci použijeme metodu __GetSingletonInstance__
+
 ## Příkaz (Command)
 __Zapouzdření požadavku na příkaz jako objektu__
 * Návrhový vzor Command je návrhový __vzor chování__, který z požadavku vytvoří samostatný objekt obsahující všechny informace o požadavku.
