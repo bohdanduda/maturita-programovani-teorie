@@ -4,8 +4,9 @@
 * Návrhové vzory poskytují zobecněné řešení ve formě šablon, které lze aplikovat na reálné problémy a efektivně je řešit
 ## Tovární metoda (Factory Method)
 __Vytvoří instanci několika odvozených tříd__
-* Tovární metoda je návrhový vzor, který poskytuje rozhraní pro vytváření objektů v nadtřídě, ale umožňuje podtřídám měnit typ objektů, které budou vytvořeny.
+* Tovární metoda je vzor, který poskytuje rozhraní pro vytváření objektů v nadtřídě, ale umožňuje podtřídám měnit typ objektů, které budou vytvořeny.
 * Vzor Tovární metoda navrhuje nahradit přímé volání konstrukce objektu (pomocí operátoru new) voláním speciální tovární metody
+* Tovární metodu bychom měli použít pokud nastane situace, že na více místech vytvářímě stejný objekt
 ## Jedináček (Singleton)
 __Třída, jejíž instance může existovat pouze jedna__
 * Singleton je návrhový vzor, který umožňuje zajistit, aby třída měla pouze jednu instanci, a zároveň poskytuje globální přístupový bod k této instanci
