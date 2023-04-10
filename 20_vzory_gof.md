@@ -29,11 +29,81 @@ public static Singleton GetSingletonInstance()
 
 ## Příkaz (Command)
 __Zapouzdření požadavku na příkaz jako objektu__
-* Návrhový vzor Command je návrhový __vzor chování__, který z požadavku vytvoří samostatný objekt obsahující všechny informace o požadavku.
+* Návrhový vzor Command je návrhový vzor __chování__, který z požadavku vytvoří samostatný objekt obsahující všechny informace o požadavku.
 * To umožňuje např. parametrizovat klienty s různými požadavky, řadit požadavky do fronty nebo je zaznamenávat a podporovat operace, které lze zrušit
+* Vzor se skládá ze 4 částí (tříd): __třída Invoker__ - třída která vyvolá nějakou metodu; __Command třída/rozhraní__ - třída, nebo rozhraní, v které je definovaná metoda Commandu; __kontrétní třídy Commandu__ - třídy které zpracovávají požadavky a dědí z rozhraní __commandu__; a nakonec __reciever třída__ - obsahuje logiku aplikace
+* V normálním případě bychom použili na zpracování požadavku rovnou třídu __reciever__, v případě použítí vzoru Command její metody a data "extrahujeme" do konkrétní třídy commandů, kde se zpracují.
+
+https://code-maze.com/command/
 ## Pozorovatel (Observer)
  __Způsob oznamování změn v řadě tříd__
-* Observer je návrhový vzor chování, který umožňuje definovat mechanismus odběru pro upozornění více objektů na všechny události, které se stanou s objektem, který pozorují
+* Observer je návrhový vzor __chování__, který umožňuje definovat mechanismus odběru pro upozornění více objektů na všechny události, které se stanou s objektem, který pozorují
+* Vzor se dělí na 2 části: objekt který je sledován - __Observable__ a objekt který ho sleduje __Observer__
+* Příklad jednoduché implementace observeru:
+ ```
+ Alarm alarm = new();
+alarm.Subscribe(new FireStation());
+alarm.Dispose();
+alarm.Dispose();
+alarm.Dispose();
+alarm.Dispose();
+alarm.Dispose();
+
+// Objekt, který sledujeme
+// Observable "odesílá" sledovanou hodnotu v našem případě int 
+public class Alarm : IObservable<int>, IDisposable
+{
+    List<IObserver<int>> watchers = new();
+
+    // Metody Subscribe a Dispose se vygenerují po podědění z rozhraní
+
+    public IDisposable Subscribe(IObserver<int> observer)
+    {
+        watchers.Add(observer);
+        return this;
+    }
+
+    int i = 0;
+
+    public void Dispose()
+    {
+        if (i > 3)
+        {
+            watchers.ForEach(x => x.OnCompleted());
+            return;
+        }
+
+        watchers.ForEach(x => x.OnNext(i++));
+    }
+}
+
+// Objekt, který sleduje sledovaný objekt
+// Observer sleduje hledanou hodnotu - int
+public class FireStation : IObserver<int>
+{
+    // Metody se vygenerují po podědění z rozhraní
+
+    public void Alert(Alarm value)
+    {
+        Console.WriteLine($"{nameof(FireStation)} RESPONDING!");
+    }
+
+    public void OnCompleted()
+    {
+        Console.WriteLine($"{nameof(FireStation)} COMPLETE!");
+    }
+
+    public void OnError(Exception error)
+    {
+        Console.WriteLine($"{nameof(FireStation)} ERROR!");
+    }
+
+    public void OnNext(int value)
+    {
+        Console.WriteLine($"{nameof(FireStation)} next: {value}");
+    }
+}
+ ```
 ## Iterator
 __Postupný přístup k prvkům kolekce__
 Iterátor je návrhový vzor chování, který umožňuje procházet prvky kolekce, aniž by byla odhalena její základní reprezentace (seznam, zásobník, strom atd.)
