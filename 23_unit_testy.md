@@ -28,3 +28,5 @@ public class UnitTest1
 ### Pre-testové
 ### Post-testové
 ## Testování formulářů
+
+https://learn.microsoft.com/en-us/dotnet/core/testing/unit-testing-best-practices
