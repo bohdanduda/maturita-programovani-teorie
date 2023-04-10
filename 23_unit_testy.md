@@ -28,5 +28,50 @@ public class UnitTest1
 ### Pre-testové
 ### Post-testové
 ## Testování formulářů
+## Testování výjimek
+* Testovaná metoda
+```
+public double Divide(double x, double y)
+{
 
+    if (y == 0)
+    {
+      throw new ZeroDivisionException(x, y);
+    }
+    return x / y;
+}
+```
+* Třída výjimky
+```
+public class ZeroDivisionException : Exception
+    {
+        public double Dividend { get; set; }
+        public double Divisor{ get; set; }
+
+        public ZeroDivisionException(double dividend, double divisor)
+        {
+            this.Dividend = dividend;
+            this.Divisor = divisor;
+        }
+    }
+```
+* Test metody
+```
+[TestMethod]
+public void TestDivideByZero()
+{
+    Arithmetics arithmetics = new();
+    try
+    {
+        double result = arithmetics.Divide(5, 0);
+
+       Assert.Fail("Expected zero division exception");
+    }
+    catch (ZeroDivisionException e)
+    {
+        Assert.AreEqual(5, e.Dividend);
+        Assert.AreEqual(0, e.Divisor);
+    }
+}
+```
 https://learn.microsoft.com/en-us/dotnet/core/testing/unit-testing-best-practices
