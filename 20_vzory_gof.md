@@ -105,8 +105,9 @@ public class FireStation : IObserver<int>
 }
  ```
 ## Iterator
-__Postupný přístup k prvkům kolekce__
-Iterátor je návrhový vzor chování, který umožňuje procházet prvky kolekce, aniž by byla odhalena její základní reprezentace (seznam, zásobník, strom atd.)
+* __Postupný přístup k prvkům kolekce__
+* Iterátor je návrhový vzor chování, který umožňuje procházet prvky kolekce, aniž by byla odhalena její základní reprezentace (seznam, zásobník, strom atd.)
+* C# má nativní podporu pro tento návrhový vzor v podobě `IEnumerable` rozhraní
 ## State
 __Změna chování objektu při změně jeho stavu__
 * Stav je návrhový vzor chování, který umožňuje objektu změnit své chování, když se změní jeho vnitřní stav. Vypadá to, jako by objekt změnil svou třídu.
