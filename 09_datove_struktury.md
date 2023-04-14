@@ -13,16 +13,23 @@
 * přidání prvku do zásobníku se nazývá __ENQUEUE__ operace
 * odstranění se nazývá __DEQUEUE__ operace
 * ve frontě se sleduje vždy první a poslední prvek mají atributy (__FRONT__) a (__REAR__)
-## sigly-linked list
+## Linked Listy
+* lineární datová struktura, která se skládá z skupiny uzlů v pořadí
+* Každý uzel se skládá ze 2 prvků:
+1. Datová část - každý uzel linked-listu může uchovávat data
+2. Adresa - každý prvek obsahuje adresu k dalšímu uzlu - nazývá se __Next__
+* Existuje mnoho typů linked-listů např.: singly linked list, doubly linked lisst, cirkulární linked list a doubly-cirkulární linked list
+### sigly-linked list
 * list, jehož prvky můžeme procházet jen jedním směrem: Head-to-Tail
 * každý prvek linked listu se nazývá __NODE__, obsahuje data a pointer k dalšímu prvku, což pomáhá udržovat strukturu listu
-## doubly-linked list
+* poslední pointer odkazuje na hodnotu __null__
+### doubly-linked list
 * list, jehož prvky jsou také ukládány ve formě __NODE__
 * každý __NODE__ v listu obsahuje 3 sub-elementy: 
 1. datovou část, která obsahuje hodnotu elementu
 2. link k předchozímu __NODE__
 3. link k dalšímu __NODE__
-
+* první a poslední pointer odkazují na hodnotu __null__
 ## principy a použití
 
 ## implementace fronty zásobníku v poli a ve spojovém seznamu
