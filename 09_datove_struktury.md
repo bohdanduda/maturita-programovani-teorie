@@ -10,7 +10,7 @@
 * poslední prvek má atribut __TOP__
 ## fronta
 * data uložena jako první budou odstraněna jako první __FIFO__ ("First In – First Out")
-* přidání prvku do zásobníku se nazývá __ENQUEUE__ operace
+* přidání prvku do fronty se nazývá __ENQUEUE__ operace
 * odstranění se nazývá __DEQUEUE__ operace
 * ve frontě se sleduje vždy první a poslední prvek mají atributy (__FRONT__) a (__REAR__)
 ## Linked Listy
