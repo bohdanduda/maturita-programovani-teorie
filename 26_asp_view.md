@@ -6,7 +6,11 @@
 * Funkce RenderBody - vygeneruje stránku, dá se použít jen v Layoutu
 ## základní konstrukce ve View - (výpis proměnné, cyklus, podmínka)
 ## tvorba odkazů
+* Odkazy tvoříme tak, že do objektu `<a>` přidáme parametr `Url.RouteUrl()>` a do něj zadáme jméno cesty kam budeme odkázáni  
+* Příklad odkazu: `<a href="@Url.RouteUrl("Login")">`
 ## template
+* Template je html šablona, kterou můžeme využít při tvoření více stránek, které mají nějakou stejnou část např. header, footer, menu nav. bar
+* Implementujeme ho tak, že do html kódu napíšeme jméno templatu
 ## partial view
 * Částečné zobrazení, pomocí funkce RenderPartial můžeme zobrazit jiné view, které funkci předáme
 * Popužití: Když máme část stránky, která se opakuje
