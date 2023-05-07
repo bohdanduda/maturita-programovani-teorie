@@ -1,9 +1,10 @@
 # ASP.NET MVC formuláře
 ## definice a generování formuláře
 * Formuláře můžeme vygenerovat přes kliknutí na metodu v controlleru, po vyplnění informací o formuláři se automaticky vygeneruje formulář
-
 ## formulářové prvky (label, textbox, checkbox,...)
 ## zpracování formuláře
+* Formulář a jeho parametry zpracováváme v __controlleru__
+* Musíme pro něj vytvořit samostatnou metodu s anotací `[HttpPost]`
 ## validace hodnot
 * V modelu vždy vybírat druhou anotaci required - past
 ## session
