@@ -1,9 +1,20 @@
 # Teorie testování
 ## Typy testů
+* Testování dělíme na 2 základní typy: Unit testy a Itegrační testy
+#### Unit testy
+* V unit testech testujeme jednotlivé metody třídy... V ideálním případě bychom měli mít otestované všechny use-case business logiky
+* Do metody předáváme růzdné kombinace vstupů. Vždy by měli vracet smysluplné hodnoty
+* Zárověň bychom měli testovat očekávané chování při zadání neplatných vstupních hodnot 
+#### Integrační testy
+* V integračních testech testujeme spolupráci dvou nebo více objektů. Testuje se jejich data-flow, konzistence dat a jejich chování
+* Itengrační testy obvykle děláme až po Unit testech
 ## Blackbox/whitebox
 * Testy, které předpokládají znalost, či neznalost kódu
 ### Whitebox - znalost kodu
+* U whiteboxu tester zná chování aplikace. Trefujeme se do slabin programu
 ### Blackbox - neznalost kodu
+* U blackboxu tester nezná implementaci kódu, takže nemůže vědět slabiny a nevýhody kódu.
+* Testuje jestli se mu vrací správé hodnoty
 ## Test UI
 * testujeme z dvou pohledů - funkční
 * funkční - snažíme se zjistit funkčnost celé aplikace. Provádíme buď ručně, nebo automatizovaně (unit testy).
