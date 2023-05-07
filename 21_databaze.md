@@ -14,7 +14,13 @@
 * C# Entity framework je rámec ORM (__Object Relational Mapping__), který vývojářům poskytuje automatizovaný způsob ukládání a přístupu k databázím
 * Výhody používání ORM: __Úspora času__ a  __sledovatelnost změn__ provedených v databázi - existují knihovny specializované na ORM, které zaznamenávají celou historii dat od jejich vytvoření
 ## Mapování tabulek
+* Je proces zákódování vlastnosti, aby se jmenovala stejně jako tabulka, nebo sloupec v databázi
+* Přiklad mapování sloupce: `[Column("my_column")]`
+* Přiklad mapování tabulky: `[Table("my_column")]`
 ## vazby
+* Vazba je anotace vlastnosti, která je v databázi jako cizí klíč
+* Příklad anotace vazby: `[ForeignKey("my_foreign_key")]`
+* Cizí klíč __se v anotaci musí jmenovat stejně__ jako ten v databázi
 ## DbContext
 __Most mezi Entity Framework a databází__
 * DbContext je třída, která představuje relaci s databází a lze ji použít k dotazování a ukládání instancí entit
