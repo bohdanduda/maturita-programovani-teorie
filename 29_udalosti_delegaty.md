@@ -22,5 +22,10 @@
 ## Lambda funkce
 * zkrácený zápis metody
 ## anonymní funkce/objekty
-
+* Anonymní objekt je účinná možnost jak zapozdřit read-only parametry do jednoho objektu, bez toho, abysme museli specifikovat jeho typ.
+* Anonymní objekt vytvoríme specifikováním `new` operátoru v inicializaci objektu
+* Příklad implementace anonymního objektu: `var anonymousObject = new { Amount = 420, Message = "Blaze it!" };`
+* Parametry vypíšeme jako kdybysme je vypisovaly z normálního objektu: `Console.WriteLine($"Amount: {anonymousObject.Amnout} Message: {anonymousObject.Message} ");`
 ## dynamické typy (var, dynamic)
+* Dynamický typ je datový typ proměnné, u kterého nemusíme specifikovat co je žač... typ var nebo dynamic sám pozná podle hodnoty proměnné co je zač.
+* Rozdíl mezi var a dynamic je takový že při spuštění __musí být proměnná var inicializována__. __Dynamic nemusí__.
