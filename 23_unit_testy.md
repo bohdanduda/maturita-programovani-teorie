@@ -1,5 +1,7 @@
 # Unit testy 
 ## Princip a využití unit testů
+* Testovat bychom měli úplně všechny public metody na servisách a objektech
+* Dobře napsané unit testy slouží jako dokumentace chování aplikace 
 ## Testovací třídy
 * Příklad testovací třídy
 ```
@@ -26,7 +28,9 @@ public class UnitTest1
 ```
 ## Pre-testové a post-testové rutiny
 ### Pre-testové
+* Pokud chceme před každým testem spustit stejnou metodu, který nám něco pro test připraví, použijeme anotace `[SetUp]`
 ### Post-testové
+* Pokud chceme po každém testu spustit stejnou metodu, která nám například "uklidí" parametry nastavené v SetUpu, použijeme anotace `[TearDown]`
 ## Testování formulářů
 ## Testování výjimek
 * Testovaná metoda
