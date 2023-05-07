@@ -1,6 +1,9 @@
 # ASP.NET MVC View 
 ## princip tvorby dynamického view
 ## Razor engine
+* Razor je syntaxe značek, která umožňuje vkládat serverový kód do webových stránek pomocí jazyků C# a VB.Net. Nejedná se o programovací jazyk, ale o jazyk značkovací na straně serveru.
+* Razor nemá žádnou vazbu na ASP.NET MVC, protože je to univerzální šablonovací engine
+* Můžeme ho použít kdekoli k vygenerování výstupu jako HTML
 ## layout
 * Layout je celková kostra html
 * Funkce RenderBody - vygeneruje stránku, dá se použít jen v Layoutu
