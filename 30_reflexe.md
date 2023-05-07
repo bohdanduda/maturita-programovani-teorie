@@ -1,4 +1,5 @@
 # Reflexe
+* Reflexi využijeme například v Unit Testech, kde si chceme nastavit vlastosti objektu do požadovaného stavu a nedostali bychom se k nim přes public metody (např. id generované databází)
 ## Type
 * Datový typ, který popisuje všechny informace o datovém typu, na kterém ho zavoláme
 * získáme ho z instance pomocí metody `GetType()`
