@@ -1,27 +1,33 @@
-# soubory a souborovı systém
-## ètení a zápis do souboru
-* pro ètení a zápis do textovıch souborù se pouívají tøídy ```StreamWriter``` a ```StreamReader```
-* ```StreamWriter``` dìdí funkce ze tøídy ```TextWriter```, která poskytuje metody na zápis objektu do ```string```, zápis ```string``` do souboru, nebo serializaci do XML
+# soubory a souborovÃ½ systÃ©m
+## ÄtenÃ­ a zÃ¡pis do souboru
+* pro ÄtenÃ­ a zÃ¡pis do textovÃ½ch souborÅ¯ se pouÅ¾Ã­vajÃ­ tÅ™Ã­dy ```StreamWriter``` a ```StreamReader```
+* ```StreamWriter``` dÄ›dÃ­ funkce ze tÅ™Ã­dy ```TextWriter```, kterÃ¡ poskytuje metody na zÃ¡pis objektu do ```string```, zÃ¡pis ```string``` do souboru, nebo serializaci do XML
 
-* ```StreamReader``` dìdí funkce ze tøídy ```TextReader```, která poskytuje metody na ètení po charakterech, blocích, øádcích anebo celého obsahu souboru
-## zpracování CSV souboru
-* CSV (Comma Separated Values) je zpùsob ukládání dat do textového souboru, kadı øádek CSV je datovı záznam
-* pro zápis a ètení z CSV souboru se v C# pouívá __CSVHelper__ NuGet
+* ```StreamReader``` dÄ›dÃ­ funkce ze tÅ™Ã­dy ```TextReader```, kterÃ¡ poskytuje metody na ÄtenÃ­ po charakterech, blocÃ­ch, Å™Ã¡dcÃ­ch anebo celÃ©ho obsahu souboru
+## zpracovÃ¡nÃ­ CSV souboru
+* CSV (Comma Separated Values) je zpÅ¯sob uklÃ¡dÃ¡nÃ­ dat do textovÃ©ho souboru, kaÅ¾dÃ½ Å™Ã¡dek CSV je datovÃ½ zÃ¡znam
+* pro zÃ¡pis a ÄtenÃ­ z CSV souboru se v C# pouÅ¾Ã­vÃ¡ __CSVHelper__ NuGet
 ## XML
-
+* XML neboli Extensible Markup Language je obecnÃ½ znaÄkovacÃ­ jazyk, kterÃ½ se pouÅ¾Ã­vÃ¡ pro uchovÃ¡vÃ¡nÃ­ a transport dat
+* UmoÅ¾Åˆuje snadnÃ© vytvÃ¡Å™enÃ­ konkrÃ©tnÃ­ch znaÄkovacÃ­ch jazykÅ¯ pro rÅ¯znÃ© ÃºÄely a rÅ¯znÃ© typy dat.
+* PouÅ¾Ã­vÃ¡ se pro serializaci dat, v ÄemÅ¾ soupeÅ™Ã­ napÅ™. s JSON
 ## JSON
-
-## práce se souborovım systémem (FileInfo, DirectoryInfo, DriveInfo)
-* tøída ```FileInfo``` se pouívá na práci a operace se soubory, obsahuje funkce a metody na vytváøení, ètení a mazání souborù
-* pouívá tøídu ```StreamWriter``` na zápis dat do souboru 
-* je souèástí ```System.IO```
-* není dìdièná
+* JSON neboli JavaScript Object Notation je zpÅ¯sob zÃ¡pisu dat nezÃ¡vislÃ½ na pc platformÄ›
+* Je urÄenÃ½ pro pÅ™enos dat, kterÃ¡ mohou bÃ½t organizovÃ¡na v polÃ­ch nebo agregovÃ¡na v objektech
+* Vstupem je libovolnÃ¡ datovÃ¡ struktura, vÃ½stupem je vÅ¾dy Å™etÄ›zec
+* V C# ho mÅ¯Å¾eme vyuÅ¾Ã­t napÅ™Ã­klad v session pro serializaci dat... VyuÅ¾Ã­vÃ¡ se tÅ™Ã­dy JsonSerializer
+* PÅ™Ã­klad serializace do textovÃ©ho Å™etÄ›zce: `string jsonString = JsonSerializer.Serialize("Hello World!");`
+## prÃ¡ce se souborovÃ½m systÃ©mem (FileInfo, DirectoryInfo, DriveInfo)
+* tÅ™Ã­da ```FileInfo``` se pouÅ¾Ã­vÃ¡ na prÃ¡ci a operace se soubory, obsahuje funkce a metody na vytvÃ¡Å™enÃ­, ÄtenÃ­ a mazÃ¡nÃ­ souborÅ¯
+* pouÅ¾Ã­vÃ¡ tÅ™Ã­du ```StreamWriter``` na zÃ¡pis dat do souboru 
+* je souÄÃ¡stÃ­ ```System.IO```
+* nenÃ­ dÄ›diÄnÃ¡
 ___
-* tøída ```DirectoryInfo``` se pouívá na práci a operace se slokami, obsahuje funkce na vytvoøení, smazání a pohyb se slokou
-* je souèástí ```System.IO```
-* není dìdièná
+* tÅ™Ã­da ```DirectoryInfo``` se pouÅ¾Ã­vÃ¡ na prÃ¡ci a operace se sloÅ¾kami, obsahuje funkce na vytvoÅ™enÃ­, smazÃ¡nÃ­ a pohyb se sloÅ¾kou
+* je souÄÃ¡stÃ­ ```System.IO```
+* nenÃ­ dÄ›diÄnÃ¡
 ___
-* tøída ```DriveInfo``` se pouívá na práci s disky, obsahuje funkce na zjištìní detailù souborù, sloek nebo systémovıch informací
-* mùeme pouít napøíklad její funkci ```GetDrives``` pro vypsání diskù.. vrací kolekci ```DriveInfo``` objektù
-* je souèástí ```System.IO```
-* není dìdièná
+* tÅ™Ã­da ```DriveInfo``` se pouÅ¾Ã­vÃ¡ na prÃ¡ci s disky, obsahuje funkce na zjiÅ¡tÄ›nÃ­ detailÅ¯ souborÅ¯, sloÅ¾ek nebo systÃ©movÃ½ch informacÃ­
+* mÅ¯Å¾eme pouÅ¾Ã­t napÅ™Ã­klad jejÃ­ funkci ```GetDrives``` pro vypsÃ¡nÃ­ diskÅ¯.. vracÃ­ kolekci ```DriveInfo``` objektÅ¯
+* je souÄÃ¡stÃ­ ```System.IO```
+* nenÃ­ dÄ›diÄnÃ¡
