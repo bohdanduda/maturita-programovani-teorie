@@ -19,7 +19,7 @@
 1. Datová část - každý uzel linked-listu může uchovávat data
 2. Adresa - každý prvek obsahuje adresu k dalšímu uzlu - nazývá se __Next__
 * Existuje mnoho typů linked-listů např.: singly linked list, doubly linked lisst, cirkulární linked list a doubly-cirkulární linked list
-### sigly-linked list
+### singly-linked list
 * list, jehož prvky můžeme procházet jen jedním směrem: Head-to-Tail
 * každý prvek linked listu se nazývá __NODE__, obsahuje data a pointer k dalšímu prvku, což pomáhá udržovat strukturu listu
 * poslední pointer odkazuje na hodnotu __null__
