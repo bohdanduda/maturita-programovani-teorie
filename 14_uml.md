@@ -25,22 +25,30 @@
 
 * Další důležitý pojem je __multiplicita__ (mohutnost) vztahů
 * Udává kolik instancí jedné třídy může být svázáno s instancí třídy druhé
-![](images/uml_multiplicity.png)
 
-* Vztahy: 
+#### Multiplicita:
+```
+1 - Třída bude jenom jedna
+1..* - One-to-many: Nekonečně možno tříd
+0..* - One-to-many nullable: Nebude žádná nebo 1, nebo n
+0..1 - Zero to one: Možnost (buď bude existovat, nebo ne)
+n - Specifický počet tříd které budou existovat
+```
+
+#### Vztahy: 
 ```
 Na úrovni instance:
 
-Závislost (Dependency)
-Asociace (Association)
-Agregace (Aggregation)
-Kompozice, složení (Composition)
+Závislost (Dependency) - Třída je závislá na druhé. Čerchováná šipka otevřená
+Asociace (Association) - Třídy spolu mají nějaký vztah. Jednoduchá čara
+Agregace (Aggregation) - Speciální typ asociace, říká že třída může být částí jiné, ale nemusí. Prázdný diamant
+Kompozice, složení (Composition) - Dítě nemůže existovat bez rodiče. Plný diamant
 
 Na úrovni třídy:
 
-Dědičnost (Generalization)
-Realizace (Realization)
-Závislost (Dependency)
+Dědičnost (Generalization, Inheritance) - Třída dědí z jiné. Prázdná šipka k třídě z které dědí
+Realizace (Realization) - Třída implementuje z rozhraní
+Závislost (Dependency) - Třída je závislá na druhé. Čerchováná šipka otevřená
 ```
 ## UseCase diagram
 * __Diagram případů užití__ zachycuje vnější pohled na modelovaný systém a tím pomáhá odhalit hranice systému a slouží jako podklad pro odhady rozsahu
@@ -63,11 +71,16 @@ Závislost (Dependency)
 TODO: https://cs.wikipedia.org/wiki/Stavov%C3%BD_diagram
 
 ## Sequence diagram
-* __Sekvenční diagram__ zachycuje časově uspořádanou posloupnost zasílání zpráv mezi objekty
+* __Sekvenční diagram__ ukazuje nám, jak spolu objekty v aplikaci, nebo třídy v kódu interagují
+* zachycuje časově uspořádanou posloupnost zasílání zpráv mezi objekty
 * nejčastěji znázorňuje spolupráci několika vzorových objektů v rámci jednoho případu užití
 
 VZHLED:
+* Skládá se z dvou typů objektů:
+1. Aktor - Symbol stickmana
+2. Objekt - Obdélník. Objekty se umisťují v sekvenčím pořadí zprava doleva
 * Jednotlivé procesy či objekty zapojené do popisovaného případu užití jsou umístěn v horní části diagramu
 * Od nich pak vedou směrem dolů čáry (lifelines), které znázorňují běh času
 * Mezi čarami jsou pak zakresleny vodorovné šipky různých typů, které reprezentují zprávy posílané mezi objekty, plné šipky značí volání, přerušované pak odpověď, podlouhlé obdélníky na svislých čarách vyznačují dobu zpracovávání dané zprávy či čekání na odpověď
+* Nezapomenout na alternativní zprávy (obdélník kde je situace 2 scenárií)
 ![](images/uml_sequence.png)
